@@ -18,7 +18,26 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
         <div className={styles.flexBox}>
           <div className={styles.leftBox}>
             <h2 className={styles.menuTitle}>MainMenu</h2>
-            <MainMenuLink id={1} number="01" title="Home" link="/" />
+            <MainMenuLink
+              id={1}
+              number="01"
+              title="Top of this website"
+              link="/"
+            />
+            <MainMenuLink id={2} number="02" title="Recent works" link="/" />
+            <MainMenuLink id={3} number="03" title="About me" link="/" />
+            <MainMenuLink
+              id={4}
+              number="04"
+              title="List of skills I possess"
+              link="/"
+            />
+            <MainMenuLink
+              id={5}
+              number="05"
+              title="Past achievements"
+              link="/"
+            />
           </div>
           <div className={styles.rightBox}>
             <h2 className={styles.menuTitle}>PageMenu</h2>
