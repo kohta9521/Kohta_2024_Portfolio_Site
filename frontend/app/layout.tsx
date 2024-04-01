@@ -7,7 +7,8 @@ import "../styles/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kohta Engineer Portfolio Site | Kohtaのポートフォリオサイト",
+  title:
+    "Kohta Engineer Portfolio Site | Kohtaのポートフォリオサイト | 河内光太",
   description:
     "kohtaのエンジニアとしてのポートフォリオサイトです。普段の私のフリーランスとしての仕事内容・個人開発を行っているアプリなどについて知ることができます。",
   keywords:
