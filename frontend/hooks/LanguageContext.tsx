@@ -1,5 +1,5 @@
-'use client';
-import React, { createContext, useContext, useState } from 'react';
+"use client";
+import React, { createContext, useContext, useState } from "react";
 
 type LanguageContextType = {
   language: string;
@@ -7,19 +7,25 @@ type LanguageContextType = {
 };
 
 const LanguageContext = createContext<LanguageContextType>({
-  language: 'jp',
+  language: "jp",
   setLanguage: () => {},
 });
 
 export const useLanguage = () => useContext(LanguageContext);
 
-export const LanguageProvider: React.FunctionComponent = ({ children }) => {
-  const [language, setLanguage] = useState('jp');
+export const LanguageProvider: React.FunctionComponent = ({
+  children,
+}: any) => {
+  const [language, setLanguage] = useState("jp");
 
   const value = {
     language,
     setLanguage,
   };
 
-  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+  return (
+    <LanguageContext.Provider value={value}>
+      {children}
+    </LanguageContext.Provider>
+  );
 };
