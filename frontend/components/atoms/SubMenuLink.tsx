@@ -4,7 +4,7 @@ import React from "react";
 // scss import
 import styles from "./styles/SubMenuLink.module.scss";
 
-// peops
+// props
 export type SubMenuLinkProps = {
   id: number;
   title: string;

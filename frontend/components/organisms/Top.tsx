@@ -1,9 +1,11 @@
 import React from "react";
 
+// components
 import Logo from "../atoms/Logo";
 import LangBtn from "../molecules/LangBtn";
-
 import Sidebar from "./Sidebar";
+
+// scss
 import styles from "./styles/Top.module.scss";
 
 const Top = () => {

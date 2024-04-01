@@ -59,3 +59,49 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .top {
+    width: 100%;
+    height: 100vh;
+    .leftBox {
+      display: none;
+    }
+    .rightBox {
+      width: 100%;
+      height: 100%;
+      .topBox {
+        width: 100%;
+        height: 300px;
+        background-color: var(--main-pink-color);
+        .header {
+          width: 100%;
+          height: 100px;
+          padding-right: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .title {
+          position: absolute;
+          top: 195px;
+          left: 20px;
+          display: block;
+          font-weight: bold;
+          font-size: 48px;
+          font-family: "IBM Plex Mono", monospace;
+          letter-spacing: -2px;
+          line-height: 50px;
+          background-repeat: no-repeat;
+        }
+        .circle {
+          display: none;
+        }
+      }
+      .bottomBox {
+        width: 100%;
+        height: calc(100% - 300px);
+      }
+    }
+  }
+}

@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
 
+// scss import
 import styles from "./styles/Menu.module.scss";
+
+// components
 import MainMenuLink from "../atoms/MainMenuLink";
 import SubMenuLink from "../atoms/SubMenuLink";
 
