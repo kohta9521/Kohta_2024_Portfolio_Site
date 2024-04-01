@@ -1,4 +1,3 @@
-# Kohta_2024_Portfolio_Site
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
@@ -60,44 +59,44 @@
 
 ### Frontend
 
-| パッケージ名                           | バージョン   |
-| -------------------------------------- | ------------ |
-| Next.js                                | 14.1.0       |
-| React                                  | ^18          |
-| TypeScript                             | 5.3.3        |
-| Sass                                   | ^1.69.5      |
-| Storybook                              | ^7.5.3       |
-| jest                                   | 9.8.1        |
-| Prettier                               | 3.2.4        |
-| ESLint                                 | 8.56.0       |
-| zod                                    | ^3.22.4      |
-| husky                                  | 9.0.6        |
-| lint-staged                            | 15.2.0       |
-| markuplint                             | 3.15.0       |
-| secretlint                             | 8.1.0        |
-| @typescript-eslint/eslint-plugin       | 6.19.1       |
-| @typescript-eslint/parser              | 6.19.1       |
-| eslint-config-prettier                 | 9.1.0        |
-| eslint-plugin-unused-imports           | 3.0.0        |
+| パッケージ名                     | バージョン |
+| -------------------------------- | ---------- |
+| Next.js                          | 14.1.0     |
+| React                            | ^18        |
+| TypeScript                       | 5.3.3      |
+| Sass                             | ^1.69.5    |
+| Storybook                        | ^7.5.3     |
+| jest                             | 9.8.1      |
+| Prettier                         | 3.2.4      |
+| ESLint                           | 8.56.0     |
+| zod                              | ^3.22.4    |
+| husky                            | 9.0.6      |
+| lint-staged                      | 15.2.0     |
+| markuplint                       | 3.15.0     |
+| secretlint                       | 8.1.0      |
+| @typescript-eslint/eslint-plugin | 6.19.1     |
+| @typescript-eslint/parser        | 6.19.1     |
+| eslint-config-prettier           | 9.1.0      |
+| eslint-plugin-unused-imports     | 3.0.0      |
 
 ### Backend
 
-| パッケージ名                           | バージョン   |
-| -------------------------------------- | ------------ |
-| Rust                                   | 9.8.1        |
-| Actix Web                              | 0.13.2       |
-| Diesel                                 | 2.1.4        |
-| Tera                                   | 1.19.1       |
-| Clap                                   | 4.4.18       |
-| Thirtyfour                             | 0.31.0       |
+| パッケージ名 | バージョン |
+| ------------ | ---------- |
+| Rust         | 9.8.1      |
+| Actix Web    | 0.13.2     |
+| Diesel       | 2.1.4      |
+| Tera         | 1.19.1     |
+| Clap         | 4.4.18     |
+| Thirtyfour   | 0.31.0     |
 
 ### Others
 
-| パッケージ名                           | バージョン   |
-| -------------------------------------- | ------------ |
-| Docker                                 | 24.0.6       |
-| Heroku                                 |              |
-| GitHub Actions                         |              |
+| パッケージ名   | バージョン |
+| -------------- | ---------- |
+| Docker         | 24.0.6     |
+| Heroku         |            |
+| GitHub Actions |            |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
