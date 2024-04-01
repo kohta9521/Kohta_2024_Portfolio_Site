@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Top />
+      <h1>hello</h1>
     </main>
   );
 }
