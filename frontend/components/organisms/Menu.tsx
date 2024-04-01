@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
 
+// scss import
 import styles from "./styles/Menu.module.scss";
+
+// components
 import MainMenuLink from "../atoms/MainMenuLink";
+import SubMenuLink from "../atoms/SubMenuLink";
 
 interface MenuProps {
   isOpen: boolean;
@@ -41,6 +45,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
           </div>
           <div className={styles.rightBox}>
             <h2 className={styles.menuTitle}>PageMenu</h2>
+            <SubMenuLink id={1} title="Home" link="/" />
+            <SubMenuLink id={1} title="About" link="/" />
+            <SubMenuLink id={1} title="Work" link="/" />
+            <SubMenuLink id={1} title="Blog" link="/" />
+            <SubMenuLink id={1} title="Company" link="/" />
           </div>
         </div>
       </div>

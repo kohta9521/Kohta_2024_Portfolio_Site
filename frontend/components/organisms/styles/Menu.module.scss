@@ -42,7 +42,7 @@
       width: 400px;
       height: auto;
       margin-left: 40px;
-      margin-top: 200px;
+      margin-top: 300px;
       .menuTitle {
         font-size: 16px;
         line-height: 30px;
@@ -55,4 +55,67 @@
 
 .open {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1280px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-black-color);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+    .header {
+      width: 95%;
+      height: 70px;
+      margin: 0 auto;
+      padding: 0px 10px;
+      .logo {
+        display: block;
+        width: auto;
+        height: 70px;
+        font-size: 14px;
+        line-height: 70px;
+        color: var(--main-pink-color);
+      }
+    }
+    .flexBox {
+      width: 95%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      .leftBox {
+        width: 100%;
+        height: auto;
+        .menuTitle {
+          font-size: 12px;
+          line-height: 30px;
+          font-weight: 450;
+          margin-left: 10px;
+          color: var(--main-white-color);
+        }
+      }
+      .rightBox {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 10px;
+        .menuTitle {
+          font-size: 12px;
+          line-height: 30px;
+          font-weight: 450;
+
+          color: var(--main-white-color);
+        }
+      }
+    }
+  }
+
+  .open {
+    transform: translateY(0);
+  }
 }

@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import HamburgerBtn from '../molecules/HamburgerBtn';
+// components
+import HamburgerBtn from "../molecules/HamburgerBtn";
 
-import styles from './styles/Sidebar.module.scss';
+// scss
+import styles from "./styles/Sidebar.module.scss";
 
 const Sidebar = () => {
   return (
