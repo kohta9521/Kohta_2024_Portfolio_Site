@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import Logo from '../atoms/Logo';
-import LangBtn from '../molecules/LangBtn';
+import Logo from "../atoms/Logo";
+import LangBtn from "../molecules/LangBtn";
 
-import Sidebar from './Sidebar';
-import styles from './styles/Top.module.scss';
+import Sidebar from "./Sidebar";
+import styles from "./styles/Top.module.scss";
 
 const Top = () => {
   return (
