@@ -1,32 +1,32 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from "@storybook/react";
 
-import Logo from '../Logo';
+import Logo from "../Logo";
 
 const meta: Meta = {
-  title: 'Components/Atoms/Logo',
+  title: "Components/Atoms/Logo",
   component: Logo,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     id: {
       control: {
-        type: 'number',
+        type: "number",
       },
     },
     link: {
       control: {
-        type: 'text',
+        type: "text",
       },
     },
     color: {
       control: {
-        type: 'select',
-        options: ['black', 'white', 'blue'],
+        type: "select",
+        options: ["black", "white", "blue"],
       },
     },
     size: {
       control: {
-        type: 'select',
-        options: ['small', 'medium', 'large'],
+        type: "select",
+        options: ["small", "medium", "large"],
       },
     },
   },
@@ -39,8 +39,8 @@ type Logo = StoryObj<typeof Logo>;
 export const Default: Logo = {
   args: {
     id: 1,
-    link: '/',
-    color: 'black',
-    size: 'medium',
+    link: "/",
+    color: "black",
+    size: "medium",
   },
 };
