@@ -1,0 +1,30 @@
+.contactBtn {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-decoration: none;
+  .contactText {
+    display: block;
+    color: var(--main-pink-color);
+    rotate: 270deg;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 70px;
+  }
+  .contactIcon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: calc(50% - 30px);
+    color: var(--main-pink-color);
+    rotate: 270deg;
+    border-radius: 50px;
+    border: 1px solid var(--main-pink-color);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 768px) {
+}
