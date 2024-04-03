@@ -4,12 +4,13 @@ import React from "react";
 import styles from "./styles/RecentWork.module.scss";
 
 // component
+import SectionTitle from "../molecules/SectionTitle";
 
 const RecentWork = () => {
   return (
     <div className={styles.recent}>
       <div className={styles.container}>
-        <h1>recent works area</h1>
+        <SectionTitle key={1} id="#recent" title="Recent My Works" />
       </div>
     </div>
   );

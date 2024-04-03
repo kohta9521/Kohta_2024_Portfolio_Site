@@ -1,5 +1,12 @@
 .recent {
+  width: 100vw;
+  height: auto;
+  padding: 150px 0px;
+  background-color: var(--main-black-color);
   .container {
+    width: 60%;
+    border: 1px solid red;
+    margin: 0 auto;
   }
 }
 
