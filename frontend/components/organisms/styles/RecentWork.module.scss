@@ -16,6 +16,21 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .recent {
+    width: 100vw;
+    height: auto;
+    padding: 150px 0px;
+    background-color: var(--main-black-color);
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      .cardFlexBox {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
