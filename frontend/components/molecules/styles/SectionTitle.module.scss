@@ -1,0 +1,15 @@
+.titleBox {
+  width: 300px;
+  margin-bottom: 50px;
+  .titleText {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+    color: var(--main-white-color);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 400px) {
+}
