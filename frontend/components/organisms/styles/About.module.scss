@@ -1,0 +1,25 @@
+.about {
+  width: 100vw;
+  height: auto;
+  padding: 100px 0px;
+  background-color: var(--main-black-color);
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    .titleBox {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      .titleTextBox {
+        width: 60%;
+        text-align: right;
+        .titleText {
+          font-size: 25px;
+          line-height: 35px;
+          color: var(--main-white-color);
+        }
+      }
+    }
+  }
+}

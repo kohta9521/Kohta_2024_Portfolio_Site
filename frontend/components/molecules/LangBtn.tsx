@@ -7,6 +7,7 @@ import { AiOutlineGlobal } from "react-icons/ai";
 // hooks
 import { useLanguage } from "@/hooks/LanguageContext";
 
+// scss
 import styles from "./styles/LangBtn.module.scss";
 
 const LangBtn = () => {
@@ -16,9 +17,9 @@ const LangBtn = () => {
   };
   return (
     <div className={styles.btnBox}>
-      <div className={styles.btnCircle}>
+      {/* <div className={styles.btnCircle}>
         <AiOutlineGlobal className={styles.btnIcon} />
-      </div>
+      </div> */}
       <div className={styles.jaCircle}>
         <button
           className={styles.btn}
