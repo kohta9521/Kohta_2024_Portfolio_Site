@@ -48,7 +48,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen }) => {
             <SubMenuLink id={1} title="Home" link="/" />
             <SubMenuLink id={1} title="About" link="/" />
             <SubMenuLink id={1} title="Work" link="/" />
-            <SubMenuLink id={1} title="Blog" link="/" />
+            <SubMenuLink
+              id={1}
+              title="Blog"
+              link="https://blog-site-kohta.vercel.app/"
+            />
             <SubMenuLink id={1} title="Company" link="/" />
           </div>
         </div>

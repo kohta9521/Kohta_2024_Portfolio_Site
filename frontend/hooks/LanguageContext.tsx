@@ -7,7 +7,7 @@ type LanguageContextType = {
 };
 
 const LanguageContext = createContext<LanguageContextType>({
-  language: "jp",
+  language: "en",
   setLanguage: () => {},
 });
 

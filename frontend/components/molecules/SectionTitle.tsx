@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // scss
 import styles from "./styles/SectionTitle.module.scss";
@@ -7,13 +8,15 @@ import styles from "./styles/SectionTitle.module.scss";
 export interface SectionTitleProps {
   key: number;
   id: string;
-  title: string;
+  jaTitle: string;
+  enTitle: string;
 }
 
-const SectionTitle = ({ key, id, title }: SectionTitleProps) => {
+const SectionTitle = ({ key, id, jaTitle, enTitle }: SectionTitleProps) => {
   return (
-    <div key={key} id={id} className={styles.titleBox}>
-      <h2 className={styles.titleText}>{title}</h2>
+    <div className={styles.titleBox}>
+        <p className={styles.jaTitle}>{jaTitle}</p>
+        <h1 className={styles.enTitle}></h1>
     </div>
   );
 };
