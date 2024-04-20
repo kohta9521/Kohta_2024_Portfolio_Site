@@ -14,9 +14,9 @@ export interface SectionTitleProps {
 
 const SectionTitle = ({ key, id, jaTitle, enTitle }: SectionTitleProps) => {
   return (
-    <div className={styles.titleBox}>
-        <p className={styles.jaTitle}>{jaTitle}</p>
-        <h1 className={styles.enTitle}></h1>
+    <div className={styles.titleBox} key={id}>
+      <p className={styles.jaTitle}>{jaTitle}</p>
+      <h1 className={styles.enTitle}>{enTitle}</h1>
     </div>
   );
 };
