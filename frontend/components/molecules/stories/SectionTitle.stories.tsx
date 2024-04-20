@@ -36,6 +36,7 @@ export const Default: SectionTitle = {
   args: {
     key: 1,
     id: "#recent",
-    title: "Recent My Works",
+    jaTitle: "Recent My Works",
+    enTitle: "Recent My Works",
   },
 };
