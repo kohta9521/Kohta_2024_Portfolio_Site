@@ -1,6 +1,7 @@
 .hamburgerBox {
   width: 100px;
   overflow: hidden;
+  z-index: 999;
   .hamburger {
     cursor: pointer;
     background-color: transparent;
@@ -87,7 +88,7 @@
 
       span {
         display: block;
-        background: var(--main-white-color);
+        background: var(--main-pink-color);
         transition: all 0.3s linear;
 
         &:nth-child(1) {
