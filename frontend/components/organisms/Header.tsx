@@ -10,7 +10,9 @@ import HamburgerBtn from "../molecules/HamburgerBtn";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <h1 className={styles.logo}>Kohta Portfolio Site</h1>
+      <div className={styles.logoBox}>
+        <h1 className={styles.logo}>K Portfolio</h1>
+      </div>
       <HamburgerBtn />
     </div>
   );

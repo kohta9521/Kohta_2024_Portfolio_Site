@@ -5,16 +5,14 @@ import React from "react";
 import styles from "../styles/page.module.scss";
 
 // components import
-import Top from "@/components/organisms/Top";
 import Header from "@/components/organisms/Header";
-import News from "@/components/organisms/News";
+import Top from "@/components/organisms/Top";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
       <Top />
-      <News />
     </main>
   );
 }

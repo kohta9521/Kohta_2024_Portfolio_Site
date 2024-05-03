@@ -1,9 +1,12 @@
 import type { StorybookConfig } from "@storybook/nextjs";
-import { resolve } from "dns";
 const path = require("path");
 
 const config: StorybookConfig = {
-  stories: ["../**/*.mdx", "../**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [
+    "../**/*.mdx",
+    "../**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../**/*.stories.mdx",
+  ],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
