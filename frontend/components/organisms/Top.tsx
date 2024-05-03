@@ -16,9 +16,9 @@ const Top = () => {
       <div className={styles.rightBox}>
         <TypeAnimation
           sequence={[
-            "Hello", // Types 'One'
-            2000, // Waits 1s
-            "Welcome to kohta's Engineer PortfolioSite", // Deletes 'One' and types 'Two'
+            "npm i kohta-engineer-portfolio-site\n", // Types 'One'
+            4000, // Waits 1s
+            "npm WARN EBADENGINE Unsupported engine {\nnpm WARN EBADENGINE   package: 'polished@4.3.0',\nnpm WARN EBADENGINE   required: { node: '>=20' },\n  npm WARN EBADENGINE   current: { node: 'v18.18.1',\n  npm: '9.8.1' }npm WARN EBADENGINE }\n", // Deletes 'One' and types 'Two'
             2000, // Waits 2s
             "Have a great day!", // Types 'Three' without deleting 'Two'
             () => {
@@ -29,6 +29,7 @@ const Top = () => {
           cursor={true}
           repeat={Infinity}
           style={{
+            whiteSpace: 'pre-line',
             fontSize: "1em",
             display: "inline-block",
             color: "rgb(0, 255, 0)",
