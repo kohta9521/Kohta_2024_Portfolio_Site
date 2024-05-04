@@ -1,0 +1,16 @@
+.scrollbox {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 50px;
+  padding: 7px 6px;
+  border: 0.2px solid var(--main-white-color);
+  border-radius: 20px;
+  .text {
+    text-align: center;
+    font-size: 8px;
+    color: var(--main-white-color);
+  }
+}
