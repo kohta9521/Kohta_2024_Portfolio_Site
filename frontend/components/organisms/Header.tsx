@@ -6,11 +6,14 @@ import styles from "./styles/Header.module.scss";
 // components
 import ListBox from "../molecules/ListBox";
 import List from "../atoms/List";
+import Logo from "../atoms/Logo";
 
 const Header = () => {
   return (
     <div className={styles.header}>
-      <div className={styles.leftBox}></div>
+      <div className={styles.leftBox}>
+        <Logo />
+      </div>
       <div className={styles.rightBox}>
         <ListBox>
           <List id={1} text="About" link="/" />
