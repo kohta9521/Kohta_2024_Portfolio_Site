@@ -24,11 +24,13 @@ const Top = () => {
             <TypeAnimation
               sequence={[
                 "Thanks for stopping by!\n",
-                3000,
-                "Thanks for stopping by!\nHere, you can check out all the cool stuff I'm up to as an engineer, \nlike my DJ gigs and freelance gigs.\n", // Deletes 'One' and types 'Two'
-                3000,
-                "Thanks for stopping by!\nHere, you can check out all the cool stuff I'm up to as an engineer, \nlike my DJ gigs and freelance gigs.\nTake your time and have a look around!",
-                3000,
+                2000,
+                "Thanks for stopping by!\nHere, you can check out all the cool stuff\n", // Deletes 'One' and types 'Two'
+                "Thanks for stopping by!\nHere, you can check out all the cool stuff\nI'm up to as an engineer, \n", // Deletes 'One' and types 'Two'
+                "Thanks for stopping by!\nHere, you can check out all the cool stuff\nI'm up to as an engineer, \nlike my DJ gigs and freelance gigs.\n", // Deletes 'One' and types 'Two'
+                2000,
+                "Thanks for stopping by!\nHere, you can check out all the cool stuff\nI'm up to as an engineer, \nlike my DJ gigs and freelance gigs.\nTake your time and have a look around!",
+                2000,
                 () => {
                   console.log("Sequence completed");
                 },
