@@ -9,7 +9,8 @@ import ConsoleAnimation from "@/components/molecules/ConsoleAnimation";
 import Top from "@/components/organisms/Top";
 import Header from "@/components/organisms/Header";
 import ContactBtn from "@/components/atoms/ContactBtn";
-import Scroll from "@/components/atoms/Scroll";
+// import Scroll from "@/components/atoms/Scroll";
+import News from "@/components/organisms/News";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false); // ローディングの状態を管理
@@ -26,8 +27,9 @@ export default function Home() {
       <div className={styles.main}>
         <Header />
         <Top />
-        <Scroll />
+        {/* <Scroll /> */}
         <ContactBtn />
+        <News />
       </div>
     );
   }
