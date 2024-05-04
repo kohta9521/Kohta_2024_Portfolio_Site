@@ -4,16 +4,18 @@ import React from "react";
 // scss
 import styles from "./styles/Top.module.scss";
 
+// spline
+import Spline from "@splinetool/react-spline";
+
 // components
-import ConsoleAnimation from "../molecules/ConsoleAnimation";
 
 const Top = () => {
   return (
     <div className={styles.top}>
-      <div className={styles.leftBox}></div>
-      <div className={styles.rightBox}>
-        <h1>Welcome to my portfolio stte</h1>
+      <div className={styles.leftBox}>
+        <Spline scene="https://prod.spline.design/7I2ng5jCiUGfTDl3/scene.splinecode" />
       </div>
+      <div className={styles.rightBox}></div>
     </div>
   );
 };
