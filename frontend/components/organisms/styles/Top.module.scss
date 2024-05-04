@@ -16,10 +16,12 @@
     width: 35%;
     height: 100%;
     .center {
-      margin-top: 400px;
+      padding-left: 30px;
+      margin-top: 450px;
       font-family: "IBM Plex Mono", monospace;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 22px;
+      line-height: 30px;
       font-style: normal;
       color: var(--main-green-color);
     }
@@ -28,14 +30,26 @@
 
 @media screen and (max-width: 1280px) {
   .top {
+    position: relative;
     width: 100vw;
     height: 100vh;
+    display: block;
     .leftBox {
       width: 100%;
       height: 100%;
     }
     .rightBox {
-      display: none;
+      width: 100%;
+      .center {
+        position: absolute;
+        width: 400px;
+        top: 65%;
+        margin-top: 0px;
+
+        padding-left: 30px;
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 }
