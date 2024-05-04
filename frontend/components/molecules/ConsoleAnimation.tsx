@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 // scss
@@ -10,18 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 const ConsoleAnimation = ({ onComplete }: any) => {
   return (
     <div className={styles.animationBox}>
-      <pre
-        className={styles.pre}
-        // style={{
-        //   whiteSpace: "pre-wrap",
-        //   fontSize: "14px",
-        //   color: "rgb(0, 255, 0)",
-        //   fontFamily: "IBM Plex Mono, monospace",
-        //   fontWeight: 400,
-        //   fontStyle: "normal",
-        //   lineHeight: "1.5em",
-        // }}
-      >
+      <pre className={styles.pre}>
         <TypeAnimation
           sequence={[
             "git clone https://github.com/kohta9521/Kohta_2024_Portfolio_Site.git\n", // Gitリポジトリをクローン
