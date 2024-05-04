@@ -20,6 +20,8 @@ const Header = () => {
           <List id={2} text="News" link="/" />
           <List id={3} text="Service" link="/" />
           <List id={4} text="Work" link="/" />
+          <List id={5} text="Gallery" link="/" />
+          <List id={6} text="Blog" link="/" />
         </ListBox>
       </div>
     </div>
