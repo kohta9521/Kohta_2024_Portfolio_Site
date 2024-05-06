@@ -1,0 +1,60 @@
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 120px;
+  height: 40px;
+  padding: 10px 10px;
+  margin-right: 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 0.1px solid var(--main-green-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-green-color);
+    transition: width 0.4s ease;
+    z-index: 0;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    color: var(--main-green-color);
+    &:hover {
+      color: var(--main-black-color);
+    }
+  }
+  .text {
+    font-size: 9px;
+    line-height: 20px;
+    color: var(--main-green-color);
+    &:hover {
+      color: var(--main-black-color);
+    }
+  }
+  // hover animation
+  .icon,
+  .text {
+    position: relative;
+    z-index: 1;
+    color: var(--main-green-color);
+  }
+}
+
+@media screen and (max-width: 1280ox) {
+}
+
+@media screen and (max-width: 600px) {
+}

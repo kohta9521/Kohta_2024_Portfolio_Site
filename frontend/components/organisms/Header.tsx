@@ -10,6 +10,7 @@ import useAOS from "@/hooks/useAOS";
 import ListBox from "../molecules/ListBox";
 import List from "../atoms/List";
 import Logo from "../atoms/Logo";
+import BoxList from "../atoms/BoxList";
 
 const Header = () => {
   useAOS();
@@ -26,6 +27,8 @@ const Header = () => {
           <List id={4} text="Work" link="/" />
           <List id={5} text="Gallery" link="/" />
           <List id={6} text="Blog" link="/" />
+          <BoxList id={1} text="資料ダウンロード" link="/" />
+          <BoxList id={2} text="お問い合わせ" link="/" />
         </ListBox>
       </div>
     </div>
