@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+JP&display=swap");
+
+.about {
+  width: 100vw;
+  height: auto;
+  padding: 180px 0px 100px 0px;
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    .titleBox {
+      width: 100%;
+      margin-bottom: 100px;
+      .title {
+        // font-family: "IBM Plex Sans JP", sans-serif;
+        color: #ffffff;
+        display: inline;
+        line-height: 1.7;
+        font-size: 57px;
+        vertical-align: bottom;
+        letter-spacing: 2px;
+        font-weight: 800;
+        background: var(--main-green-color);
+        margin: 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }
+    }
+    .flexBox {
+      width: 100%;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .scrollBox {
+      height: auto;
+      margin-bottom: 100px;
+      .triangle {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border-style: solid;
+        border-width: 20px 20px 0 20px;
+        border-color: rgb(0, 255, 0) transparent transparent transparent;
+      }
+    }
+    // main
+    .mainFlexBox {
+      display: flex;
+      justify-content: space-between;
+      .leftBox {
+        width: 50%;
+        .title {
+          color: #fff;
+          display: inline;
+          line-height: 1.7;
+          font-size: 29px;
+          vertical-align: bottom;
+          letter-spacing: 2px;
+          font-weight: 800;
+          background: var(--main-green-color);
+          margin: 0;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+      }
+      .rightBox {
+        width: 50%;
+        .mainText {
+          margin: 0;
+          font-weight: 700;
+          line-height: 1.8rem;
+          font-size: 16px;
+          letter-spacing: 0.05em;
+          color: var(--main-white-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .about {
+    width: 100vw;
+    height: auto;
+    padding: 150px 0px 100px 0px;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      .titleBox {
+        width: 100%;
+        margin-bottom: 70px;
+        .title {
+          line-height: 1.7;
+          font-size: 32px;
+          color: #ffffff;
+          display: inline;
+          vertical-align: bottom;
+          letter-spacing: 2px;
+          font-weight: 800;
+          background: var(--main-green-color);
+          margin: 0;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+      }
+      .flexBox {
+        width: 100%;
+        margin-bottom: 50px;
+        display: block;
+      }
+      .scrollBox {
+        height: auto;
+        margin-bottom: 50px;
+        .triangle {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          margin: 0 auto;
+          border-style: solid;
+          border-width: 20px 20px 0 20px;
+          border-color: rgb(0, 255, 0) transparent transparent transparent;
+        }
+      }
+      // main
+      .mainFlexBox {
+        display: block;
+        justify-content: space-between;
+        .leftBox {
+          width: 100%;
+          margin-bottom: 30px;
+          .title {
+            color: #fff;
+            display: inline;
+            line-height: 1.7;
+            font-size: 29px;
+            vertical-align: bottom;
+            letter-spacing: 2px;
+            font-weight: 800;
+            background: var(--main-green-color);
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+          }
+        }
+        .rightBox {
+          width: 100%;
+          .mainText {
+            margin: 0;
+            font-weight: 700;
+            line-height: 1.8rem;
+            font-size: 13px;
+            letter-spacing: 0.05em;
+            color: var(--main-white-color);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+}

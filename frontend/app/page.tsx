@@ -8,9 +8,8 @@ import styles from "../styles/page.module.scss";
 import ConsoleAnimation from "@/components/molecules/ConsoleAnimation";
 import Top from "@/components/organisms/Top";
 import Header from "@/components/organisms/Header";
-import ContactBtn from "@/components/atoms/ContactBtn";
-import Scroll from "@/components/atoms/Scroll";
-import News from "@/components/organisms/News";
+// import Scroll from "@/components/atoms/Scroll";
+import About from "@/components/organisms/About";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false); // ローディングの状態を管理
@@ -27,9 +26,8 @@ export default function Home() {
       <div className={styles.main}>
         <Header />
         <Top />
-        <Scroll />
-        <ContactBtn />
-        <News />
+        {/* <Scroll /> */}
+        <About />
       </div>
     );
   }
