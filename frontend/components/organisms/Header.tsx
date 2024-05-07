@@ -23,8 +23,8 @@ const Header = () => {
         <ListBox>
           <List id={1} text="About" link="/" />
           <List id={2} text="News" link="/" />
-          <List id={3} text="Service" link="/" />
-          <List id={4} text="Work" link="/" />
+          <List id={3} text="Services" link="/" />
+          <List id={4} text="Works" link="/" />
           <List id={5} text="Gallery" link="/" />
           <List id={6} text="Blog" link="/" />
           <BoxList id={1} text="資料ダウンロード" link="/" />
