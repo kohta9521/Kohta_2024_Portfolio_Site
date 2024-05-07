@@ -27,14 +27,16 @@ const WorkCard = ({ id, link, img, company, title, tags }: WorkCardProps) => {
         height={210}
         alt="活動実績画像"
       />
-      <p className={styles.company}>{company}</p>
-      <h2 className={styles.title}>{title}</h2>
-      <div className={styles.tags}>
-        {tags.map((tag, index) => (
-          <p key={index} className={styles.tag}>
-            {tag}
-          </p>
-        ))}
+      <div className={styles.textBox}>
+        <p className={styles.company}>{company}</p>
+        <h2 className={styles.title}>{title}</h2>
+        <div className={styles.tags}>
+          {tags.map((tag, index) => (
+            <p key={index} className={styles.tag}>
+              {tag}
+            </p>
+          ))}
+        </div>
       </div>
     </Link>
   );
