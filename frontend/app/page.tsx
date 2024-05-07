@@ -17,7 +17,6 @@ export default function Home() {
 
   // アニメーションが終了したときの処理
   const handleAnimationComplete = () => {
-    console.log("Portfolio setup completed");
     setLoadingComplete(true); // ローディング完了状態をtrueに設定
   };
 
