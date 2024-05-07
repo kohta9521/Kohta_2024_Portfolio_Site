@@ -10,6 +10,7 @@ import Top from "@/components/organisms/Top";
 import Header from "@/components/organisms/Header";
 // import Scroll from "@/components/atoms/Scroll";
 import About from "@/components/organisms/About";
+import Work from "@/components/organisms/Work";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false); // ローディングの状態を管理
@@ -28,6 +29,7 @@ export default function Home() {
         <Top />
         {/* <Scroll /> */}
         <About />
+        <Work />
       </div>
     );
   }
