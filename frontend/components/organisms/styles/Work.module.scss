@@ -1,16 +1,18 @@
 .work {
+  position: relative;
   width: 100vw;
   height: auto;
   padding: 0px 0px 100px 0px;
-  border: 1px solid red;
   .bg {
+    position: absolute;
     width: 100vw;
-    padding-top: 150px;
+    height: 980px;
+    padding-top: 100px;
     background-color: var(--sub-green-color);
     .container {
       width: 60%;
+      height: 130%;
       margin: 0 auto;
-      border: 1px solid red;
       .titleBox {
         width: 100%;
         height: auto;
@@ -25,8 +27,85 @@
       //   main
       .flexCardBox {
         width: 100%;
-        height: 185px;
+        height: auto;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        // more card
+        .moreBox {
+          display: block;
+          text-decoration: none;
+          width: 30%;
+          height: 360px;
+          border-radius: 5px;
+          background-color: var(--main-white-color);
+          border: 4px solid var(--sub-green-color);
+          .moreText {
+            line-height: 360px;
+            text-align: center;
+            font-size: 25px;
+            color: var(--sub-green-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .work {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 0px 0px 80px 0px;
+    .bg {
+      position: absolute;
+      width: 100vw;
+      height: 1800px;
+      padding-top: 70px;
+      background-color: var(--sub-green-color);
+      .container {
+        width: 90%;
+        height: 150%;
+        margin: 0 auto;
+        .titleBox {
+          width: 100%;
+          height: auto;
+          margin-bottom: 30px;
+          .jaTitle {
+            font-size: 18px;
+          }
+          .enTitle {
+            font-size: 75px;
+          }
+          .desc {
+            font-size: 14px;
+          }
+        }
+        //   main
+        .flexCardBox {
+          width: 100%;
+          height: auto;
+          margin-bottom: 30px;
+          display: block;
+          justify-content: space-between;
+          // more card
+          .moreBox {
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            height: 360px;
+            border-radius: 5px;
+            background-color: var(--main-white-color);
+            border: 4px solid var(--sub-green-color);
+            .moreText {
+              line-height: 360px;
+              text-align: center;
+              font-size: 25px;
+              color: var(--sub-green-color);
+            }
+          }
+        }
       }
     }
   }
