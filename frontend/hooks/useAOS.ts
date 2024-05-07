@@ -1,7 +1,7 @@
-'use client';
-import AOS from 'aos';
-import { useEffect } from 'react';
-import 'aos/dist/aos.css';
+"use client";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const useAOS = () => {
   useEffect(() => {

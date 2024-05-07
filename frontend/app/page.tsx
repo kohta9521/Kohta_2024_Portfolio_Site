@@ -8,32 +8,29 @@ import styles from "../styles/page.module.scss";
 import ConsoleAnimation from "@/components/molecules/ConsoleAnimation";
 import Top from "@/components/organisms/Top";
 import Header from "@/components/organisms/Header";
-// import Scroll from "@/components/atoms/Scroll";
 import About from "@/components/organisms/About";
 import Work from "@/components/organisms/Work";
+import Profile from "@/components/organisms/Profile";
 
 export default function Home() {
-  const [loadingComplete, setLoadingComplete] = useState(false); // ローディングの状態を管理
+  const [loadingComplete, setLoadingComplete] = useState(false);
 
-  // アニメーションが終了したときの処理
   const handleAnimationComplete = () => {
-    setLoadingComplete(true); // ローディング完了状態をtrueに設定
+    setLoadingComplete(true);
   };
 
   if (loadingComplete) {
-    // ローディングが完了したらメインコンテンツを表示
     return (
       <div className={styles.main}>
         <Header />
         <Top />
-        {/* <Scroll /> */}
         <About />
         <Work />
+        <Profile />
       </div>
     );
   }
 
-  // ローディング中の表示
   return (
     <div className={styles.top}>
       <ConsoleAnimation onComplete={handleAnimationComplete} />

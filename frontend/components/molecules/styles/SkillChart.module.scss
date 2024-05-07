@@ -1,0 +1,25 @@
+.chartContainer {
+  width: 100%;
+  height: auto;
+  .flexBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .chart {
+      width: 31%;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .chartContainer {
+    width: 100%;
+    height: auto;
+    .flexBox {
+      display: block;
+      .chart {
+        width: 100%;
+      }
+    }
+  }
+}
