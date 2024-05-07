@@ -1,0 +1,31 @@
+.btn {
+  position: relative; // ポジションを相対に設定
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  padding: 14px 50px;
+  border: 2px solid var(--main-green-color);
+  transition: transform 0.3s ease; // トランスフォームのアニメーションを追加
+
+  .text {
+    color: var(--main-white-color);
+  }
+
+  // 擬似要素の追加
+  &::after {
+    content: ""; // 必須のプロパティ
+    position: absolute;
+    width: 100%; // 親要素と同じサイズ
+    height: 100%;
+    top: 3px; // 下に3px
+    left: 3px; // 右に3px
+    border: 2px solid var(--main-green-color); // 枠線を緑色に
+    opacity: 1; // 常に表示
+    transition: opacity 0.3s ease; // 透明度のアニメーションを追加
+  }
+
+  // ホバー時の動作
+  &:hover {
+    transform: translate(3px, 3px); // 右下に3px移動して擬似要素と重なる
+  }
+}

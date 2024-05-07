@@ -1,16 +1,18 @@
+"use client";
 import React from "react";
 
 // scss
 import styles from "./styles/About.module.scss";
 
 // hooks
-import useAOS from "@/hooks/useAOS";
+// import useAOS from "@/hooks/useAOS";
 
 // components
 import AboutCard from "../molecules/AboutCard";
+import ViewMoreBtn from "../atoms/ViewMoreBtn";
 
 const About = () => {
-  useAOS();
+  // useAOS()
   return (
     <div className={styles.about}>
       <div className={styles.container}>
@@ -74,6 +76,7 @@ const About = () => {
               <br />
               学生であることを"強み"と捉え、お客様に最高のサービスを提供いたします。
             </p>
+            <ViewMoreBtn id={1} link="/about" text="もっと見る👀" />
             {/* btn components */}
           </div>
         </div>
