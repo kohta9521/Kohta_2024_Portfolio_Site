@@ -39,8 +39,8 @@ const SkillChart = () => {
       {
         label: "Frontend",
         data: [65, 59, 90, 81, 56, 55],
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
-        borderColor: "rgba(255, 99, 132, 1)",
+        backgroundColor: "rgb(0, 216, 0, 0.1)",
+        borderColor: "rgb(0, 255, 0)",
         borderWidth: 1,
       },
     ],
@@ -58,8 +58,8 @@ const SkillChart = () => {
       {
         label: "Backend",
         data: [65, 59, 90, 81, 56, 55],
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
-        borderColor: "rgba(255, 99, 132, 1)",
+        backgroundColor: "rgb(0, 216, 0, 0.1)",
+        borderColor: "rgb(0, 255, 0)",
         borderWidth: 1,
       },
     ],
@@ -77,8 +77,8 @@ const SkillChart = () => {
       {
         label: "Tools",
         data: [65, 59, 90, 81, 56, 55],
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
-        borderColor: "rgba(255, 99, 132, 1)",
+        backgroundColor: "rgb(0, 216, 0, 0.1)",
+        borderColor: "rgb(0, 255, 0)",
         borderWidth: 1,
       },
     ],

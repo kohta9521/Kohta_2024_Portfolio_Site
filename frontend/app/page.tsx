@@ -11,6 +11,8 @@ import Header from "@/components/organisms/Header";
 import About from "@/components/organisms/About";
 import Work from "@/components/organisms/Work";
 import Profile from "@/components/organisms/Profile";
+import Footer from "@/components/organisms/Footer";
+import Contact from "@/components/organisms/Contact";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -26,7 +28,9 @@ export default function Home() {
         <Top />
         <About />
         <Work />
-        <Profile />
+        {/* <Profile /> */}
+        <Contact />
+        <Footer />
       </div>
     );
   }
