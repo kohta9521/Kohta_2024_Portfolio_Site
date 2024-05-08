@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./styles/Contact.module.scss";
 
 // components
+import ContactContents from "../molecules/ContactContents";
 
 const Contact = () => {
   return (
@@ -23,7 +24,9 @@ const Contact = () => {
             お問い合わせいただいた内容については、原則として3営業日以内に返信いたします。
           </p>
         </div>
-        <div className={styles.rightBox}></div>
+        <div className={styles.rightBox}>
+          <ContactContents />
+        </div>
       </div>
     </div>
   );

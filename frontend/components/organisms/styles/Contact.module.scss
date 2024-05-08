@@ -6,7 +6,7 @@
     width: 60%;
     margin: 0 auto;
     display: flex;
-
+    justify-content: space-between;
     .leftBox {
       width: 45%;
       .titleBox {
@@ -23,6 +23,7 @@
     }
     .rightBox {
       width: 50%;
+      padding-top: 190px;
     }
   }
 }
