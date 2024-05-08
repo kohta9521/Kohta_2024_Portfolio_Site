@@ -7,10 +7,10 @@ const ContactContents = () => {
   return (
     <div className={styles.contact}>
       <form action={process.env.NEXT_PUBLIC_NEWT_FORM_ENDPOINT} method="post">
-        <label htmlFor="company">
+        {/* <label htmlFor="company">
           社名・所属(なしの場合は未記入で結構です)
         </label>
-        <input id="company" name="company" />
+        <input id="company" name="company" /> */}
         <label htmlFor="name">
           お名前<span className={styles.icon}>*</span>
         </label>
