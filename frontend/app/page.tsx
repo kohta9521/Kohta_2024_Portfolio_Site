@@ -28,7 +28,7 @@ export default function Home() {
         <Top />
         <About />
         <Work />
-        {/* <Profile /> */}
+        <Profile />
         <Contact />
         <Footer />
       </div>
