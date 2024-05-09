@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 // scss
@@ -9,7 +10,7 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <h1>Contact us</h1>
-      <form action={process.env.NEXT_PUBLIC_NEWT_FORM_ENDPOINT} method="post">
+      <form action={process.env.NEWT_FORM_ENDPOINT} method="post">
         <label htmlFor="name">Name</label>
         <input id="name" name="name" />
         <label htmlFor="email">Email</label>

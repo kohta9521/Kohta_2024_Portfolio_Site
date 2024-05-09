@@ -6,7 +6,7 @@ import styles from "./styles/ContactContents.module.scss";
 const ContactContents = () => {
   return (
     <div className={styles.contact}>
-      <form action={process.env.NEXT_PUBLIC_NEWT_FORM_ENDPOINT} method="post">
+      <form action={process.env.NEWT_FORM_ENDPOINT} method="POST">
         {/* <label htmlFor="company">
           社名・所属(なしの場合は未記入で結構です)
         </label>
