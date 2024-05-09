@@ -10,7 +10,10 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <h1>Contact us</h1>
-      <form action={process.env.NEWT_FORM_ENDPOINT} method="post">
+      <form
+        action="https://kohta-engineer-portfolio.form.newt.so/v1/RqLXd0DCc"
+        method="post"
+      >
         <label htmlFor="name">Name</label>
         <input id="name" name="name" />
         <label htmlFor="email">Email</label>
