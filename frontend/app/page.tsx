@@ -13,6 +13,7 @@ import Work from "@/components/organisms/Work";
 import Profile from "@/components/organisms/Profile";
 import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
+import Process from "@/components/organisms/Process";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -29,6 +30,7 @@ export default function Home() {
         <About />
         <Work />
         <Profile />
+        <Process />
         <Contact />
         <Footer />
       </div>

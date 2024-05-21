@@ -1,0 +1,91 @@
+.process {
+  width: 100vw;
+  height: auto;
+  padding: 100px 0px 80px 0px;
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    .titleBox {
+      width: 100%;
+      height: auto;
+      margin-bottom: 70px;
+      .jaTitle {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--main-green-color);
+      }
+      .enTitle {
+        font-size: 100px;
+      }
+    }
+    .content {
+      margin-bottom: 200px;
+      .step {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 50px;
+        .text {
+          display: block;
+          font-size: 22px;
+          margin-right: 100px;
+          font-weight: bold;
+          overflow: hidden;
+          .number {
+            margin-right: 10px;
+            font-size: 35px;
+            color: var(--main-green-color);
+          }
+        }
+      }
+      .mainText {
+        display: block;
+        width: 60%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .process {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 20px;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      .titleBox {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        .jaTitle {
+          font-size: 18px;
+        }
+        .enTitle {
+          font-size: 75px;
+        }
+      }
+      .content {
+        width: 100%;
+        .step {
+          display: block;
+          .text {
+            font-size: 20px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            .number {
+              font-size: 30px;
+            }
+          }
+          .mainText {
+            width: 100%;
+            font-size: 12px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

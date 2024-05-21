@@ -13,43 +13,71 @@
     margin: 0;
   }
   .desc {
-    margin: 20px 0 15px 0;
+    margin: 20px 0 30px 0;
     font-size: 13px;
+    min-height: 150px;
     font-weight: 700;
     line-height: 1.8rem;
     letter-spacing: 0.05em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
   .link {
+    position: relative; // ポジションを相対に設定
+    display: inline-block;
+    width: auto;
     text-decoration: none;
-    position: relative;
-    z-index: 1;
-    padding: 10px 2px;
-    color: var(--main-green-color);
-    &::before {
-      background: var(--sub-green-color);
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
+    padding: 14px 50px;
+    border: 2px solid var(--main-green-color);
+    transition: transform 0.3s ease; // トランスフォームのアニメーションを追加
+    color: white;
+    // 擬似要素の追加
+    &::after {
+      content: ""; // 必須のプロパティ
       position: absolute;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      transform: scale(0, 1);
-      transform-origin: right top;
-      transition: transform 0.3s;
-      z-index: -1;
+      width: 100%; // 親要素と同じサイズ
+      height: 100%;
+      top: 3px; // 下に3px
+      left: 3px; // 右に3px
+      border: 2px solid var(--main-green-color); // 枠線を緑色に
+      opacity: 1; // 常に表示
+      transition: opacity 0.3s ease; // 透明度のアニメーションを追加
     }
+
+    // ホバー時の動作
     &:hover {
-      color: #e8e8e8;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    &:hover::before {
-      transform-origin: left top;
-      transform: scale(1, 1);
+      transform: translate(3px, 3px); // 右下に3px移動して擬似要素と重なる
     }
   }
+  // .link {
+  //   text-decoration: none;
+  //   position: relative;
+  //   z-index: 1;
+  //   padding: 10px 2px;
+  //   color: var(--main-green-color);
+  //   &::before {
+  //     background: var(--sub-green-color);
+  //     content: "";
+  //     display: block;
+  //     width: 100%;
+  //     height: 100%;
+  //     position: absolute;
+  //     left: 0;
+  //     bottom: 0;
+  //     margin: auto;
+  //     transform: scale(0, 1);
+  //     transform-origin: right top;
+  //     transition: transform 0.3s;
+  //     z-index: -1;
+  //   }
+  //   &:hover {
+  //     color: #e8e8e8;
+  //     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  //   }
+  //   &:hover::before {
+  //     transform-origin: left top;
+  //     transform: scale(1, 1);
+  //   }
+  // }
 }
 
 @media screen and (max-width: 1280px) {
@@ -64,7 +92,7 @@
       vertical-align: bottom;
       letter-spacing: 2px;
       font-weight: 800;
-      background: var(--main-green-color);
+      // background: var(--main-green-color);
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
       margin: 0;
     }
@@ -77,34 +105,6 @@
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
     .link {
-      text-decoration: none;
-      position: relative;
-      z-index: 1;
-      padding: 8px 2px;
-      color: var(--main-green-color);
-      &::before {
-        background: var(--main-green-color);
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        transform: scale(0, 1);
-        transform-origin: right top;
-        transition: transform 0.3s;
-        z-index: -1;
-      }
-      &:hover {
-        color: #e8e8e8;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      }
-      &:hover::before {
-        transform-origin: left top;
-        transform: scale(1, 1);
-      }
     }
   }
 }

@@ -38,7 +38,7 @@ const SkillChart = () => {
     datasets: [
       {
         label: "Frontend",
-        data: [65, 59, 90, 81, 56, 55],
+        data: [80, 70, 60, 50, 70, 60],
         backgroundColor: "rgb(0, 216, 0, 0.1)",
         borderColor: "rgb(0, 255, 0)",
         borderWidth: 1,
@@ -46,18 +46,11 @@ const SkillChart = () => {
     ],
   };
   const data2 = {
-    labels: [
-      "HTML",
-      "CSS/Sass",
-      "JavaScript",
-      "TypeScript",
-      "React.js",
-      "Next.js",
-    ],
+    labels: ["Go", "Rust", "C", "C++", "Python", "Java"],
     datasets: [
       {
         label: "Backend",
-        data: [65, 59, 90, 81, 56, 55],
+        data: [55, 30, 40, 30, 30, 20],
         backgroundColor: "rgb(0, 216, 0, 0.1)",
         borderColor: "rgb(0, 255, 0)",
         borderWidth: 1,
@@ -66,17 +59,17 @@ const SkillChart = () => {
   };
   const data3 = {
     labels: [
-      "HTML",
-      "CSS/Sass",
-      "JavaScript",
-      "TypeScript",
-      "React.js",
-      "Next.js",
+      "Figma",
+      "Docker",
+      "Postman",
+      "DaVinci Resolve",
+      "Blender",
+      "iTerm",
     ],
     datasets: [
       {
         label: "Tools",
-        data: [65, 59, 90, 81, 56, 55],
+        data: [80, 60, 50, 80, 40, 70],
         backgroundColor: "rgb(0, 216, 0, 0.1)",
         borderColor: "rgb(0, 255, 0)",
         borderWidth: 1,
