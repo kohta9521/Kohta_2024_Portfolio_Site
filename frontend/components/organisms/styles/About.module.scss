@@ -19,7 +19,7 @@
         vertical-align: bottom;
         letter-spacing: 2px;
         font-weight: 800;
-        background: var(--sub-green-color);
+        // background: var(--sub-green-color);
         margin: 0;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       }
@@ -58,7 +58,7 @@
           vertical-align: bottom;
           letter-spacing: 2px;
           font-weight: 800;
-          background: var(--sub-green-color);
+          // background: var(--sub-green-color);
           margin: 0;
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
         }
@@ -98,7 +98,7 @@
           vertical-align: bottom;
           letter-spacing: 2px;
           font-weight: 800;
-          background: var(--main-green-color);
+          // background: var(--main-green-color);
           margin: 0;
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
         }
@@ -133,11 +133,11 @@
             color: #fff;
             display: inline;
             line-height: 1.7;
-            font-size: 29px;
+            font-size: 26px;
             vertical-align: bottom;
             letter-spacing: 2px;
             font-weight: 800;
-            background: var(--main-green-color);
+            // background: var(--main-green-color);
             margin: 0;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
           }
@@ -146,6 +146,7 @@
           width: 100%;
           .mainText {
             margin: 0;
+            margin-bottom: 30px;
             font-weight: 700;
             line-height: 1.8rem;
             font-size: 13px;

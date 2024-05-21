@@ -12,7 +12,9 @@
       .jaTitle {
         display: inline;
         font-size: 24px;
-        background: var(--main-green-color);
+        font-weight: bold;
+        color: var(--main-green-color);
+        // background: var(--main-green-color);
         margin: 0;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       }
@@ -53,7 +55,7 @@
   .profile {
     width: 100vw;
     height: auto;
-    padding: 150px 0px;
+    padding: 100px 0px 40px 0px;
     .container {
       width: 90%;
       margin: 0 auto;
