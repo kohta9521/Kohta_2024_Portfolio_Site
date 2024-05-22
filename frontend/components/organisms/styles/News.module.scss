@@ -1,0 +1,45 @@
+.news {
+  width: 100vw;
+  height: auto;
+  padding: 50px 0;
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    .titleBox {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      .jaTitle {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--main-green-color);
+      }
+      .enTitle {
+        font-size: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .news {
+    width: 100vw;
+    height: auto;
+    padding: 50px 0;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      .titleBox {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        .jaTitle {
+          font-size: 18px;
+        }
+        .enTitle {
+          font-size: 75px;
+        }
+      }
+    }
+  }
+}
