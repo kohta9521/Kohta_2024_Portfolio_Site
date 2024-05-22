@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // scss
 import styles from "../styles/page.module.scss";
@@ -18,6 +18,15 @@ import News from "@/components/organisms/News";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false);
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
+
+    if (!hasVisited) {
+      setLoadingComplete(false);
+      localStorage.setItem("hasVisited", "true");
+    }
+  }, []);
 
   const handleAnimationComplete = () => {
     setLoadingComplete(true);
