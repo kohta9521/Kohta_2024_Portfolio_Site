@@ -18,6 +18,23 @@
         font-size: 100px;
       }
     }
+    .newsBox {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid red;
+      .leftBox {
+        width: 45%;
+        height: 100%;
+        border: 1px solid red;
+      }
+      .rightBox {
+        width: 50%;
+        height: 100%;
+        border: 1px solid red;
+      }
+    }
   }
 }
 

@@ -2,18 +2,15 @@
 import React from "react";
 
 // next
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 // scss
 import styles from "./Thanks.module.scss";
 
 const Thanks = () => {
-  const router = useRouter();
   return (
     <div className={styles.thanks}>
-      <button type="button" onClick={() => router.back()}>
-        Back to Previous Page
-      </button>
+      <Link href="/">Back to Previous Page</Link>
     </div>
   );
 };
