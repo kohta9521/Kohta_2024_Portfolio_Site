@@ -21,12 +21,12 @@ const Header = () => {
       </div>
       <div className={styles.rightBox} data-aos="fade-up">
         <ListBox>
-          <List id={1} text="About" link="/" />
-          <List id={2} text="News" link="/" />
-          <List id={3} text="Services" link="/" />
-          <List id={4} text="Works" link="/" />
-          <List id={5} text="Gallery" link="/" />
-          <List id={6} text="Blog" link="/" />
+          <List id={1} text="About" link="/about" />
+          <List id={2} text="News" link="/news" />
+          <List id={3} text="Services" link="/services" />
+          <List id={4} text="Works" link="/works" />
+          <List id={5} text="Gallery" link="/gellery" />
+          <List id={6} text="Blog" link="https://www.kohta-tech-blog.com/" />
           <BoxList id={1} text="資料ダウンロード" link="/" />
           <BoxList id={2} text="お問い合わせ" link="/" />
         </ListBox>
