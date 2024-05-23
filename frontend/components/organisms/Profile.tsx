@@ -6,14 +6,10 @@ import Image from "next/image";
 // scss
 import styles from "./styles/Profile.module.scss";
 
-// hooks
-import useAOS from "@/hooks/useAOS";
-
 // components
 import SkillChart from "../molecules/SkillChart";
 
 const Profile = () => {
-  useAOS();
   return (
     <div className={styles.profile}>
       <div className={styles.container}>

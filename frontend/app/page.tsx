@@ -15,6 +15,8 @@ import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
 import Process from "@/components/organisms/Process";
 import News from "@/components/organisms/News";
+import ContactBtn from "@/components/atoms/ContactBtn";
+import ContactButton from "@/components/atoms/ContactButton";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -36,6 +38,7 @@ export default function Home() {
     return (
       <div className={styles.main}>
         <Header />
+        <ContactButton />
         <Top />
         <About />
         <Work />

@@ -11,7 +11,7 @@ export type SubSecTitleProps = {
 
 const SubSecTitle = ({ id, title }: SubSecTitleProps) => {
   return (
-    <div className={styles.box} key={id}>
+    <div className={styles.box} key={id} data-aos="fade-up">
       <span className={styles.bar}></span>
       <h1 className={styles.title}>{title}</h1>
     </div>
