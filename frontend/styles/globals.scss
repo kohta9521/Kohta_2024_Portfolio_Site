@@ -62,3 +62,14 @@ body {
   background-color: var(--main-black-color);
   color: var(--main-white-color);
 }
+
+/* scroll bar custamize */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--main-black-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-green-color);
+}

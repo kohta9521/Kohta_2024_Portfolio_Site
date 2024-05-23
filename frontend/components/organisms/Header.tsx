@@ -26,8 +26,8 @@ const Header = () => {
           <List id={3} text="Services" link="/services" />
           <List id={4} text="Works" link="/works" />
           <List id={6} text="Blog" link="https://www.kohta-tech-blog.com/" />
-          {/* <BoxList id={1} text="資料ダウンロード" link="/pdf/portfolio.pdf" /> */}
-          <BoxList id={2} text="お問い合わせ" link="/contact" />
+          {/* <BoxList id={1} text="資料ダウンロード" link="" /> */}
+          <BoxList id={2} text="資料ダウンロード" link="/pdf/portfolio.pdf" />
         </ListBox>
       </div>
     </div>

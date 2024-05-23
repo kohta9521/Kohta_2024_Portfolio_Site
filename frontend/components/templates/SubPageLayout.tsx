@@ -13,6 +13,9 @@ import Header from "../organisms/Header";
 // icon
 import { IoIosHome } from "react-icons/io";
 
+// hooks
+import useAOS from "@/hooks/useAOS";
+
 // props
 export type SubPageLayoutProps = {
   id: number;
@@ -31,11 +34,12 @@ const SubPageLayout = ({
   desc,
   children,
 }: SubPageLayoutProps) => {
+  useAOS();
   return (
     <div className={styles.layout} key={id}>
       <Header />
       <div className={styles.hero}>
-        <div className={styles.levelBox}>
+        <div className={styles.levelBox} data-aos="fade-up">
           <Link href="/" className={styles.homeButton}>
             <IoIosHome className={styles.icon} />
             <p className={styles.home}>Home</p>
@@ -47,13 +51,13 @@ const SubPageLayout = ({
             </p>
           ))}
         </div>
-        <div className={styles.titleBox}>
+        <div className={styles.titleBox} data-aos="fade-up">
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.subtitle}>{subtitle}</p>
           <p className={styles.desc}>{desc}</p>
         </div>
       </div>
-      <div className={styles.container}>
+      <div className={styles.container} data-aos="fade-up">
         <div className={styles.main}>{children}</div>
       </div>
     </div>
