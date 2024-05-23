@@ -1,0 +1,57 @@
+.layout {
+  width: 100vw;
+  height: auto;
+  .hero {
+    width: 100vw;
+    margin-top: 100px;
+    padding-top: 100px;
+    .levelBox {
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 150px;
+      display: flex;
+      align-items: center;
+      .homeButton {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-right: 10px;
+        .icon {
+          width: 25px;
+          height: 25px;
+          padding: 5px;
+          border-radius: 30px;
+          margin-right: 10px;
+          color: var(--main-black-color);
+          background-color: var(--main-green-color);
+        }
+        .home {
+          color: var(--main-green-color);
+        }
+      }
+      .slash {
+        margin-right: 10px;
+        .level {
+        }
+      }
+    }
+    .titleBox {
+      width: 75%;
+      margin: 0 auto;
+      .title {
+        font-size: 100px;
+        font-weight: 500;
+        line-height: 115px;
+      }
+      .subtitle {
+        font-size: 24px;
+      }
+      .desc {
+      }
+    }
+  }
+  .container {
+    .main {
+    }
+  }
+}

@@ -18,7 +18,13 @@ export type BoxListProps = {
 
 const BoxList = ({ id, text, link }: BoxListProps) => {
   return (
-    <Link key={id} href={link} className={styles.btn}>
+    <Link
+      key={id}
+      href={link}
+      className={styles.btn}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FaFilePdf className={styles.icon} />
       <p className={styles.text}>{text}</p>
     </Link>
