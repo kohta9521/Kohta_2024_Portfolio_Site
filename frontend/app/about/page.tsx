@@ -5,6 +5,7 @@ import styles from "./About.module.scss";
 
 // components
 import SubPageLayout from "@/components/templates/SubPageLayout";
+import SubSecTitle from "@/components/atoms/SubSecTitle";
 
 const About = () => {
   return (
@@ -13,9 +14,9 @@ const About = () => {
       level={["About"]}
       title="About"
       subtitle="サイト概要"
-      desc="サイトについての説明を記載しています。"
+      desc="kohta portfolio siteの概要となぜこのサイトを作成したのか、どのような技術スタックでこのサイトを制作しているのかをご覧いただけます。"
     >
-      <h1>sample</h1>
+      <SubSecTitle id={1} title="概要" />
     </SubPageLayout>
   );
 };

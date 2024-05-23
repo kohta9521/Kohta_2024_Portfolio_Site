@@ -49,7 +49,7 @@ const SubPageLayout = ({
         </div>
         <div className={styles.titleBox}>
           <h1 className={styles.title}>{title}</h1>
-          <p className={styles.subtitle}>/ {subtitle}</p>
+          <p className={styles.subtitle}>{subtitle}</p>
           <p className={styles.desc}>{desc}</p>
         </div>
       </div>

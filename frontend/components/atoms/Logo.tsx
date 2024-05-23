@@ -8,7 +8,7 @@ import styles from "./styles/Logo.module.scss";
 
 const Logo = () => {
   return (
-    <Link className={styles.logo} href="">
+    <Link className={styles.logo} href="/">
       <p className={styles.text}>Kohta Portfolio Site</p>
     </Link>
   );
