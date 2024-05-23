@@ -6,9 +6,6 @@ import Link from "next/link";
 // scss
 import styles from "./styles/AboutCard.module.scss";
 
-// hooks
-import useAOS from "@/hooks/useAOS";
-
 // props
 export type AboutProps = {
   id: number;
@@ -19,7 +16,6 @@ export type AboutProps = {
 };
 
 const AboutCard = ({ id, title, desc, link, linkText }: AboutProps) => {
-  useAOS();
   return (
     <div className={styles.card} key={id}>
       <h2 className={styles.title}>{title}</h2>

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 // next
@@ -14,7 +13,7 @@ import Header from "../organisms/Header";
 import { IoIosHome } from "react-icons/io";
 
 // hooks
-import useAOS from "@/hooks/useAOS";
+// import useAOS from "@/hooks/useAOS";
 
 // props
 export type SubPageLayoutProps = {
@@ -34,12 +33,11 @@ const SubPageLayout = ({
   desc,
   children,
 }: SubPageLayoutProps) => {
-  useAOS();
   return (
     <div className={styles.layout} key={id}>
       <Header />
       <div className={styles.hero}>
-        <div className={styles.levelBox} data-aos="fade-up">
+        <div className={styles.levelBox}>
           <Link href="/" className={styles.homeButton}>
             <IoIosHome className={styles.icon} />
             <p className={styles.home}>Home</p>

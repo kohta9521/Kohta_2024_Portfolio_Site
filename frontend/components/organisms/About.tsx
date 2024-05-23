@@ -1,18 +1,13 @@
-"use client";
 import React from "react";
 
 // scss
 import styles from "./styles/About.module.scss";
-
-// hooks
-// import useAOS from "@/hooks/useAOS";
 
 // components
 import AboutCard from "../molecules/AboutCard";
 import ViewMoreBtn from "../atoms/ViewMoreBtn";
 
 const About = () => {
-  // useAOS()
   return (
     <div className={styles.about}>
       <div className={styles.container}>

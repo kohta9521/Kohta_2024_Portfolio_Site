@@ -3,9 +3,6 @@ import React from "react";
 // next
 import Link from "next/link";
 
-// hooks
-import useAOS from "@/hooks/useAOS";
-
 // scss
 import styles from "./styles/Work.module.scss";
 
@@ -13,7 +10,6 @@ import styles from "./styles/Work.module.scss";
 import WorkCard from "../molecules/WorkCard";
 
 const Work = () => {
-  useAOS();
   return (
     <div className={styles.work}>
       <div className={styles.bg}>

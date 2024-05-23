@@ -1,11 +1,7 @@
-"use client";
 import React from "react";
 
 // scss
 import styles from "./styles/Process.module.scss";
-
-// hooks
-import useAOS from "@/hooks/useAOS";
 
 // icon
 // import { IoIosArrowForward } from "react-icons/io";
@@ -13,8 +9,6 @@ import useAOS from "@/hooks/useAOS";
 // components
 
 const Process = () => {
-  useAOS();
-
   return (
     <div className={styles.process}>
       <div className={styles.container}>
