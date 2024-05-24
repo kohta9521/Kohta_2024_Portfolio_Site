@@ -4,10 +4,17 @@ import React from "react";
 import styles from "./Contact.module.scss";
 
 // components
+import SubPageLayout from "@/components/templates/SubPageLayout";
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <SubPageLayout
+      id={3}
+      level={["Contact"]}
+      title="CONTACT"
+      subtitle="お問い合わせ"
+      desc="私に関するお問い合わせ・Web制作のご依頼はこちらからお問い合わせください。"
+    >
       <h1>Contact us</h1>
       <form
         action="https://kohta-engineer-portfolio.form.newt.so/v1/RqLXd0DCc"
@@ -21,7 +28,7 @@ const Contact = () => {
         <textarea id="message" name="message"></textarea>
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </SubPageLayout>
   );
 };
 
