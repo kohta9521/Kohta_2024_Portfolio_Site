@@ -15,7 +15,6 @@ import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
 import Process from "@/components/organisms/Process";
 import News from "@/components/organisms/News";
-import ContactBtn from "@/components/atoms/ContactBtn";
 import ContactButton from "@/components/atoms/ContactButton";
 
 export default function Home() {
