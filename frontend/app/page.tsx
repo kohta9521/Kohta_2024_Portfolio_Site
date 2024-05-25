@@ -14,7 +14,7 @@ import Profile from "@/components/organisms/Profile";
 import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
 import Process from "@/components/organisms/Process";
-import News from "@/components/organisms/News";
+// import News from "@/components/organisms/News";
 import ContactButton from "@/components/atoms/ContactButton";
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
         <Work />
         <Profile />
         <Process />
-        <News />
+        {/* <News /> */}
         <Contact />
         <Footer />
       </div>
