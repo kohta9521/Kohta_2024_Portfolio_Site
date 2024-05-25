@@ -88,8 +88,10 @@
       color: #fff;
       display: inline;
       line-height: 1.7;
-      font-size: 24px;
+      font-size: 23px;
       vertical-align: bottom;
+      // word-break: keep-all;
+      // overflow-wrap: break-word;
       letter-spacing: 2px;
       font-weight: 800;
       // background: var(--main-green-color);

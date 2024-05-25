@@ -11,6 +11,8 @@ import Header from "../organisms/Header";
 
 // icon
 import { IoIosHome } from "react-icons/io";
+import SubContactBox from "../organisms/SubContactBox";
+import Footer from "../organisms/Footer";
 
 // hooks
 // import useAOS from "@/hooks/useAOS";
@@ -42,9 +44,9 @@ const SubPageLayout = ({
             <IoIosHome className={styles.icon} />
             <p className={styles.home}>Home</p>
           </Link>
-          <p className={styles.slash}>/</p>
           {level.map((item, index) => (
             <p key={index} className={styles.level}>
+              <span className={styles.slash}>/</span>
               {item}
             </p>
           ))}
@@ -58,6 +60,7 @@ const SubPageLayout = ({
       <div className={styles.container} data-aos="fade-up">
         <div className={styles.main}>{children}</div>
       </div>
+      <Footer />
     </div>
   );
 };
