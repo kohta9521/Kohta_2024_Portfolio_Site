@@ -30,8 +30,13 @@
           color: var(--main-green-color);
         }
       }
-      .slash {
+      .level {
+        display: flex;
         margin-right: 10px;
+        .slash {
+          display: block;
+          margin-right: 10px;
+        }
       }
     }
     .titleBox {
