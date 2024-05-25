@@ -5,6 +5,7 @@ import styles from "./Web.module.scss";
 
 // components
 import SubPageLayout from "@/components/templates/SubPageLayout";
+import SubSecTitle from "@/components/molecules/SubSecTitle";
 
 const Web = () => {
   return (
@@ -15,7 +16,9 @@ const Web = () => {
       subtitle="Web関連サービス"
       desc="私、Kohtaが提供するWeb関連のサービスの一覧と詳細、過去の制作日星機などを記載しております。"
     >
-      <h1>Web</h1>
+      <SubSecTitle id={1} stringid="about" text="Web制作" color="green" />
+      <SubSecTitle id={1} stringid="about" text="Web制作" color="green" />
+      <SubSecTitle id={1} stringid="about" text="Web制作" color="green" />
     </SubPageLayout>
   );
 };

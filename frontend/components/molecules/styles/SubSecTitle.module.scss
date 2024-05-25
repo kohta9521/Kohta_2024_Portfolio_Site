@@ -1,0 +1,55 @@
+.titleBox {
+  display: flex;
+  margin: 0 0 60px 0;
+  padding-top: 80px;
+  align-items: center;
+  .circle {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--main-green-color);
+    margin-right: 16px;
+    flex-shrink: 0;
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+// props
+.white {
+  background-color: var(--main-white-color);
+}
+.black {
+  background-color: var(--main-black-color);
+}
+.green {
+  background-color: var(--main-green-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .titleBox {
+    display: flex;
+    margin: 0;
+    padding-top: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+    .circle {
+      content: " ";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--main-green-color);
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+    .text {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
