@@ -13,10 +13,20 @@
     width: 100%;
     padding: 20px;
     .title {
+      display: block;
+      color: var(--main-white-color);
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 20px;
     }
     .desc {
+      display: block;
+      width: 100%;
+      color: var(--main-white-color);
     }
     .date {
+      font-size: 14px;
+      color: var(--main-white-color);
     }
   }
 }
