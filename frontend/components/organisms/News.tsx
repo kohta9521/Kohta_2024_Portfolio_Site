@@ -24,11 +24,11 @@ const News = () => {
           <div className={styles.leftBox}>
             <MainNewsCard
               id={1}
-              link="/news"
-              img="/images/news/blog.png"
-              title="新しいサービスを開始しました"
+              link="/news/top"
+              img="/images/news/portfolio.webp"
+              title="ポートフォリオサイトをリニューアルしました"
               date="2024年5月2日"
-              desc="新しいサービスを開始しました。"
+              desc="Next TypeScriptを使用してポートフォリオサイトをリニューアルしました。CMS機能なども搭載しております。"
             />
           </div>
           <div className={styles.rightBox}>
