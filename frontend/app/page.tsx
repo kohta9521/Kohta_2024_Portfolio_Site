@@ -16,6 +16,7 @@ import Contact from "@/components/organisms/Contact";
 import Process from "@/components/organisms/Process";
 import News from "@/components/organisms/News";
 import ContactButton from "@/components/atoms/ContactButton";
+import SnsBox from "@/components/organisms/SnsBox";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -38,6 +39,7 @@ export default function Home() {
       <div className={styles.main}>
         <Header />
         <ContactButton />
+        <SnsBox />
         <Top />
         <About />
         <Work />
