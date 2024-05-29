@@ -37,7 +37,7 @@ const Work = () => {
             {recommendBlogs.slice(0, 3).map((blog) => (
               <WorkCard
                 id={1}
-                link={`/work/${blog.id}`}
+                link={`/works/${blog.id}`}
                 img={blog.topImage}
                 company={blog.updatedAt}
                 title={blog.title}
@@ -49,7 +49,7 @@ const Work = () => {
             {recommendBlogs.slice(3, 5).map((blog) => (
               <WorkCard
                 id={1}
-                link={`/work/${blog.id}`}
+                link={`/works/${blog.id}`}
                 img={blog.topImage}
                 company={blog.updatedAt}
                 title={blog.title}

@@ -16,6 +16,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@agney/react-loading": "^0.1.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/x-charts": "^6.19.4",
@@ -23,8 +24,10 @@
     "@splinetool/runtime": "^1.2.5",
     "aos": "^3.0.0-beta.6",
     "chart.js": "^4.4.2",
+    "cheerio": "^1.0.0-rc.12",
     "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
+    "highlight.js": "^11.9.0",
     "install": "^0.13.0",
     "locomotive-scroll": "^5.0.0-beta.12",
     "microcms-js-sdk": "^3.1.1",
