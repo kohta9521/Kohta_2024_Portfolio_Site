@@ -44,7 +44,7 @@ export default function Home() {
         <About />
         <Work />
         <Profile />
-        <News />
+        {/* <News /> */}
         <Process />
         <Contact />
         <Footer />
