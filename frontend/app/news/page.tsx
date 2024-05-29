@@ -1,4 +1,8 @@
+"use client";
 import React from "react";
+
+// hooks
+import useGetAllNews from "@/hooks/useGetAllNews";
 
 // scss
 import styles from "./News.module.scss";
@@ -10,6 +14,8 @@ import BoxTitle from "@/components/molecules/BoxTitle";
 import SubMainText from "@/components/molecules/SubMainText";
 
 const News = () => {
+  const news = useGetAllNews();
+  console.log(news);
   return (
     <SubPageLayout
       id={1}

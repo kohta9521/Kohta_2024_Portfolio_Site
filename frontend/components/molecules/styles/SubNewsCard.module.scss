@@ -2,18 +2,22 @@
   display: block;
   width: 100%;
   height: calc(100% / 4);
-  padding: 35px;
+  padding: 30px;
   text-decoration: none;
   border-top: 0.1px solid gray;
   border-bottom: 0.1px solid gray;
   .title {
     font-size: 20px;
+    line-height: 40px;
     color: var(--main-white-color);
   }
   .desc {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 20px;
     color: var(--main-white-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .date {
     font-size: 12px;
