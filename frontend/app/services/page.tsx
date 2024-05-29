@@ -14,6 +14,8 @@ import BoxTitle from "@/components/molecules/BoxTitle";
 import SubMainText from "@/components/molecules/SubMainText";
 import SubPageInsertImage from "@/components/molecules/SubPageInsertImage";
 import SubNextButton from "@/components/molecules/SubNextButton";
+import SubContactBox from "@/components/organisms/SubContactBox";
+import SpaceBox from "@/components/atoms/SpaceBox";
 
 const Services = () => {
   return (
@@ -111,6 +113,8 @@ const Services = () => {
         text="不定期ではありますがDJ活動を行っております。専門はHouseですがそれ以外のEDM・HipHopなども対応可能です。イベントの際に少し音楽が欲しいな、いい感じのDJ知り合いにいない？といったご要望にも応えさせていただきます。"
       />
       <SubNextButton id={2} link="/services/dj" text="DJ活動の詳細を見る 👉" />
+      <SpaceBox id={1} level="medium" />
+      <SubContactBox />
     </SubPageLayout>
   );
 };
