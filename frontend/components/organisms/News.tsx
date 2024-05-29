@@ -1,4 +1,8 @@
+"use client";
 import React from "react";
+
+// hooks
+import useGetAllNews from "@/hooks/useGetAllNews";
 
 // scss
 import styles from "./styles/News.module.scss";
@@ -8,6 +12,7 @@ import MainNewsCard from "../molecules/MainNewsCard";
 import SubNewsCard from "../molecules/SubNewsCard";
 
 const News = () => {
+  const news = useGetAllNews();
   return (
     <div className={styles.news}>
       <div className={styles.container}>
@@ -22,39 +27,20 @@ const News = () => {
               link="/news"
               img="/images/news/blog.png"
               title="新しいサービスを開始しました"
-              date="2021.10.10"
+              date="2024年5月2日"
               desc="新しいサービスを開始しました。"
             />
           </div>
           <div className={styles.rightBox}>
-            <SubNewsCard
-              id={1}
-              link="/news"
-              title="新しいサービスを開始しました"
-              desc="新しいサービスを開始しました。"
-              date="2021.10.10"
-            />
-            <SubNewsCard
-              id={1}
-              link="/news"
-              title="新しいサービスを開始しました"
-              desc="新しいサービスを開始しました。"
-              date="2021.10.10"
-            />
-            <SubNewsCard
-              id={1}
-              link="/news"
-              title="新しいサービスを開始しました"
-              desc="新しいサービスを開始しました。"
-              date="2021.10.10"
-            />
-            <SubNewsCard
-              id={1}
-              link="/news"
-              title="新しいサービスを開始しました"
-              desc="新しいサービスを開始しました。"
-              date="2021.10.10"
-            />
+            {news.slice(0, 4).map((news) => (
+              <SubNewsCard
+                id={1}
+                link={`/news/${news.id}`}
+                title={news.title}
+                desc={news.desc}
+                date={news.updatedAt}
+              />
+            ))}
           </div>
         </div>
       </div>
