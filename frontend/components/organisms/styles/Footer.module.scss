@@ -1,25 +1,146 @@
 .footer {
+  position: relative;
   width: 100vw;
   height: auto;
-  min-height: 500px;
+  min-height: 350px;
   padding: 100px 0px;
   background-color: var(--main-green-color);
   .container {
     width: 60%;
+    height: 150px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     .leftBox {
+      position: relative;
+      width: 400px;
+      margin-bottom: 20px;
+      .logo {
+        font-size: 20px;
+        color: var(--main-black-color);
+      }
+      .leftBox {
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        .copyright {
+          font-size: 10px;
+          color: var(--sub-text-color);
+        }
+      }
     }
     .rightBox {
-      .topBox {
-      }
-      .bottomBox {
+      width: auto;
+      display: flex;
+      .sectionBox {
+        width: auto;
+        margin-right: 50px;
+        .pagetitle {
+          display: block;
+          font-size: 17px;
+          margin-bottom: 10px;
+          text-decoration: none;
+          color: var(--main-black-color);
+          &:hover {
+            color: var(--sub-text-color);
+          }
+        }
+        ul {
+          list-style: none;
+          li {
+            .link {
+              text-decoration: none;
+              color: var(--sub-text-color);
+              .item {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
       }
     }
+  }
+  .copyright {
+    position: absolute;
+    width: auto;
+    right: calc(50% - 30px);
+    bottom: 10px;
+    color: var(--sub-text-color);
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 1280px) {
-}
-@media screen and (max-width: 600px) {
+  .footer {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    min-height: 350px;
+    padding: 50px 0px;
+    background-color: var(--main-green-color);
+    .container {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      .leftBox {
+        position: relative;
+        width: 400px;
+        margin-bottom: 20px;
+        .logo {
+          font-size: 20px;
+          color: var(--main-black-color);
+        }
+        .leftBox {
+          width: 100%;
+          height: 100px;
+          bottom: 0;
+          .copyright {
+            font-size: 10px;
+            color: var(--sub-text-color);
+          }
+        }
+      }
+      .rightBox {
+        width: auto;
+        display: block;
+        .sectionBox {
+          width: auto;
+          margin-right: 0px;
+          .pagetitle {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: var(--main-black-color);
+            &:hover {
+              color: var(--sub-text-color);
+            }
+          }
+          ul {
+            list-style: none;
+            li {
+              .link {
+                text-decoration: none;
+                color: var(--sub-text-color);
+                .item {
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      position: absolute;
+      width: auto;
+      right: calc(50% - 60px);
+      bottom: 10px;
+      color: var(--sub-text-color);
+      font-size: 10px;
+    }
+  }
 }
