@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 
 // next
 import Link from "next/link";
+
+// hooks
+import useDesignationBlogData from "@/hooks/useDesignationArticles";
 
 // scss
 import styles from "./styles/Work.module.scss";
@@ -10,6 +14,14 @@ import styles from "./styles/Work.module.scss";
 import WorkCard from "../molecules/WorkCard";
 
 const Work = () => {
+  const blogIds = [
+    "ygozrkrtbw9",
+    "ccraa7de1",
+    "tjxi_4bg9m",
+    "7qowt2ku1_c",
+    "j7t49ack17",
+  ];
+  const recommendBlogs = useDesignationBlogData({ ids: blogIds });
   return (
     <div className={styles.work}>
       <div className={styles.bg}>
@@ -22,69 +34,29 @@ const Work = () => {
             </p>
           </div>
           <div className={styles.flexCardBox}>
-            <WorkCard
-              id={1}
-              link="/works/1"
-              img="/images/sample.png"
-              company="個人制作"
-              title="大学生のための最大級新歓UFESを開催/公式サイト構築をしました。"
-              tags={["#Event", "#UFES", "#新歓", "#大学生"]}
-            />
-            <WorkCard
-              id={1}
-              link="/works/1"
-              img="/images/news/gate.jpg"
-              company="共同開発"
-              title="合同大学卒業イベントで入場管理システムを開発しました。#DX化"
-              tags={[
-                "#DX",
-                "#自動化",
-                "#脱紙",
-                "#入場管理",
-                "QRシステム",
-                "#自動送信",
-              ]}
-            />
-            <WorkCard
-              id={1}
-              link="/works/1"
-              img="/images/news/freers.jpg"
-              company="株式会社Freers様"
-              title="株式会社Freers様の会社サイトを制作させていただきました。"
-              tags={[
-                "#Web制作",
-                "#Next.js",
-                "#TypeScript",
-                "#デザイン",
-                "#SEO",
-              ]}
-            />
+            {recommendBlogs.slice(0, 3).map((blog) => (
+              <WorkCard
+                id={1}
+                link={`/work/${blog.id}`}
+                img={blog.topImage}
+                company={blog.updatedAt}
+                title={blog.title}
+                tags={blog.tags.map((tag) => tag.tag)}
+              />
+            ))}
           </div>
           <div className={styles.flexCardBox}>
-            <WorkCard
-              id={1}
-              link="/works/1"
-              img="/images/news/blog.png"
-              company="個人制作"
-              title="個人テックブログを開発しました。#CMS"
-              tags={["#TechBlog", "#MicroCMS", "#ブログ制作", "#エンジニア"]}
-            />
-            <WorkCard
-              id={1}
-              link="/works/1"
-              img="/images/news/reginavi.jpg"
-              company="共同開発"
-              title="学祭でレジ/LINE呼び出しサービスをリリースいたしました。"
-              tags={[
-                "#DX",
-                "#自動化",
-                "#LINE呼び出し",
-                "#レジ",
-                "QRシステム",
-                "#自動送信",
-              ]}
-            />
-            <Link className={styles.moreBox} href="/news">
+            {recommendBlogs.slice(3, 5).map((blog) => (
+              <WorkCard
+                id={1}
+                link={`/work/${blog.id}`}
+                img={blog.topImage}
+                company={blog.updatedAt}
+                title={blog.title}
+                tags={blog.tags.map((tag) => tag.tag)}
+              />
+            ))}
+            <Link className={styles.moreBox} href="/works">
               <p className={styles.moreText}>View More</p>
             </Link>
           </div>
