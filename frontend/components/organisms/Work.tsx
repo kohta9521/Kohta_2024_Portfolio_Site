@@ -18,7 +18,7 @@ const Work = () => {
             <p className={styles.jaTitle}>制作・活動実績</p>
             <h1 className={styles.enTitle}>Works</h1>
             <p className={styles.desc}>
-              ここでは私の活動実績をご覧いただけます。たんにWeb制作だけではなく、イベント運営やシステム開発なども行っております。
+              ここでは私の活動実績をご覧いただけます。たんにWeb制作だけではなく、イベント運営やシステム開発なども行っております。詳しい内容は全てブログにまとめているためブログのサイトへと遷移いたします。
             </p>
           </div>
           <div className={styles.flexCardBox}>
