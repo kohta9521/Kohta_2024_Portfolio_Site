@@ -9,12 +9,12 @@ import ConsoleAnimation from "@/components/molecules/ConsoleAnimation";
 import Top from "@/components/organisms/Top";
 import Header from "@/components/organisms/Header";
 import About from "@/components/organisms/About";
-import Work from "@/components/organisms/Work";
+// import Work from "@/components/organisms/Work";
 import Profile from "@/components/organisms/Profile";
 import Footer from "@/components/organisms/Footer";
 import Contact from "@/components/organisms/Contact";
 import Process from "@/components/organisms/Process";
-import News from "@/components/organisms/News";
+// import News from "@/components/organisms/News";
 import ContactButton from "@/components/atoms/ContactButton";
 import SnsBox from "@/components/organisms/SnsBox";
 
@@ -42,7 +42,7 @@ export default function Home() {
         <SnsBox />
         <Top />
         <About />
-        <Work />
+        {/* <Work /> */}
         <Profile />
         {/* <News /> */}
         <Process />
