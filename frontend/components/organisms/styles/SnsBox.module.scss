@@ -1,0 +1,35 @@
+.sns {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  width: 25px;
+  height: auto;
+  .border {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: var(--main-green-color);
+  }
+  .link {
+    display: block;
+    text-decoration: none;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    .icon {
+      width: 25px;
+      height: 25px;
+      margin: 0 auto;
+      color: var(--main-green-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sns {
+    display: none;
+  }
+}
