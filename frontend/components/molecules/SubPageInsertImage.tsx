@@ -1,13 +1,15 @@
 "use client";
 import React, { useEffect } from "react";
+
+// next
 import Image from "next/image";
+
+// scss
+import styles from "./styles/SubPageInsertImage.module.scss";
 
 // aos imports
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// scss
-import styles from "./styles/SubPageInsertImage.module.scss";
 
 // props
 export type SubPageInsertImageProps = {
