@@ -20,7 +20,7 @@ const News = () => {
             <MainNewsCard
               id={1}
               link="/news"
-              img="/images/blog.png"
+              img="/images/news/blog.png"
               title="新しいサービスを開始しました"
               date="2021.10.10"
               desc="新しいサービスを開始しました。"
