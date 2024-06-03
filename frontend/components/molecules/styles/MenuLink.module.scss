@@ -1,0 +1,18 @@
+.link {
+  text-decoration: none;
+  .title {
+  }
+}
+
+.large {
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--main-white-color);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--main-green-color);
+  }
+}
+.small {
+  font-size: 25px;
+}
