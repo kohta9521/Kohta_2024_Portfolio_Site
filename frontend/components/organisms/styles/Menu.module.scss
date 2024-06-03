@@ -11,23 +11,21 @@
   .container {
     width: 90%;
     margin: 150px auto;
-    border: 1px solid red;
-    display: flex;
+    display: block;
     .leftBox {
-      width: 50%;
-      border: 1px solid red;
+      width: 100%;
+      margin-bottom: 20px;
       text-align: left;
       .menuTitle {
         display: block;
         width: 100%;
         color: white;
-        font-size: 35px;
+        font-size: 20px;
         margin-bottom: 20px;
       }
     }
     .centerBox {
-      width: 25%;
-      border: 1px solid red;
+      width: 100%;
       text-align: left;
       .menuTitle {
         display: block;
@@ -38,14 +36,28 @@
       }
     }
     .rightBox {
-      width: 25%;
-      border: 1px solid red;
+      width: 100%;
+      margin-top: 30px;
     }
   }
 }
 
 .open {
   transform: translateY(0);
+}
+
+.link {
+  text-decoration: none;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    color: var(--main-green-color);
+  }
 }
 
 @media screen and (max-width: 1280px) {
