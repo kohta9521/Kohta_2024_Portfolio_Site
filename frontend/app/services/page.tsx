@@ -82,7 +82,7 @@ const Services = () => {
       />
       <SubNextButton
         id={2}
-        link="/services/system"
+        link="/services/design"
         text="デザインの詳細を見る 👉"
       />
       {/* movie */}
