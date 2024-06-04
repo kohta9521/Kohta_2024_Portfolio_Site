@@ -56,7 +56,7 @@
     position: relative;
     width: 100vw;
     height: auto;
-    padding: 0px 0px 750px 0px;
+    padding: 0px 0px 500px 0px;
     .bg {
       width: 100vw;
       height: 1800px;
@@ -92,12 +92,12 @@
             display: block;
             text-decoration: none;
             width: 100%;
-            height: 360px;
+            height: 100px;
             border-radius: 5px;
             background-color: var(--main-white-color);
             border: 4px solid var(--sub-green-color);
             .moreText {
-              line-height: 360px;
+              line-height: 100px;
               text-align: center;
               font-size: 25px;
               color: var(--sub-green-color);
