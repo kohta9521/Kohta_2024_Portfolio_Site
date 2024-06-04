@@ -4,9 +4,6 @@ import React from "react";
 // next
 import Link from "next/link";
 
-// hooks
-// import useDesignationBlogData from "@/hooks/useDesignationArticles";
-
 // scss
 import styles from "./styles/Work.module.scss";
 
@@ -14,14 +11,6 @@ import styles from "./styles/Work.module.scss";
 import WorkCard from "../molecules/WorkCard";
 
 const Work = () => {
-  // const blogIds = [
-  //   "ygozrkrtbw9",
-  //   "ccraa7de1",
-  //   "tjxi_4bg9m",
-  //   "7qowt2ku1_c",
-  //   "j7t49ack17",
-  // ];
-  // const recommendBlogs = useDesignationBlogData({ ids: blogIds });
   return (
     <div className={styles.work}>
       <div className={styles.bg}>
@@ -34,16 +23,6 @@ const Work = () => {
             </p>
           </div>
           <div className={styles.flexCardBox}>
-            {/* {recommendBlogs.slice(0, 3).map((blog) => (
-              <WorkCard
-                id={1}
-                link={`/works/${blog.id}`}
-                img={blog.topImage}
-                company={blog.updatedAt}
-                title={blog.title}
-                tags={blog.tags.map((tag) => tag.tag)}
-              />
-            ))} */}
             <WorkCard
               id={1}
               link={`/works/ygozrkrtbw9`}
@@ -70,16 +49,6 @@ const Work = () => {
             />
           </div>
           <div className={styles.flexCardBox}>
-            {/* {recommendBlogs.slice(3, 5).map((blog) => (
-              <WorkCard
-                id={1}
-                link={`/works/${blog.id}`}
-                img={blog.topImage}
-                company={blog.updatedAt}
-                title={blog.title}
-                tags={blog.tags.map((tag) => tag.tag)}
-              />
-            ))} */}
             <WorkCard
               id={1}
               link={`/works/7qowt2ku1_c`}
