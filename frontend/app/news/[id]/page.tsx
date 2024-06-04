@@ -8,10 +8,14 @@ import useGetAllNews from "@/hooks/useGetAllNews";
 import styles from "./NewsDetail.module.scss";
 
 // components
+import SubWorkLayout from "@/components/templates/SubWorkLayout";
 
 const NewsDetail = () => {
-
-  return <div className={styles.content}>news</div>;
+  return (
+    <SubWorkLayout>
+      <h1>news main content</h1>
+    </SubWorkLayout>
+  );
 };
 
 export default NewsDetail;
