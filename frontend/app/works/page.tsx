@@ -4,8 +4,7 @@ import React from "react";
 // scss
 import styles from "./Works.module.scss";
 
-// hooks
-import useDesignationBlogData from "@/hooks/useDesignationArticles";
+
 
 // components
 import SubPageLayout from "@/components/templates/SubPageLayout";
@@ -15,14 +14,6 @@ import SubMainText from "@/components/molecules/SubMainText";
 import WorkCard from "@/components/molecules/WorkCard";
 
 const Works = () => {
-  const blogIds = [
-    "ygozrkrtbw9",
-    "ccraa7de1",
-    "tjxi_4bg9m",
-    "7qowt2ku1_c",
-    "j7t49ack17",
-  ];
-  const recommendBlogs = useDesignationBlogData({ ids: blogIds });
   return (
     <SubPageLayout
       id={5}
