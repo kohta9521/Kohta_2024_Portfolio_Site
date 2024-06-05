@@ -1,0 +1,122 @@
+.card {
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .contentBox {
+    width: 60%;
+    height: auto;
+    .title {
+      color: #fff;
+      display: block;
+      line-height: 1.4;
+      font-size: 29px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    .date {
+      font-size: 11px;
+      color: var(--main-green-color);
+    }
+    .lang {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 11px;
+      color: var(--main-green-color);
+    }
+    .desc {
+      color: var(--main-white-color);
+      font-size: 13px;
+    }
+  }
+  .imageBox {
+    position: relative;
+    width: 30%;
+    height: auto;
+    &:hover .icon {
+      display: block;
+      transition: all 0.3s ease-in-out;
+    }
+    .icon {
+      display: none;
+      position: absolute;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+      color: var(--main-green-color);
+      transition: all 0.3s ease-in-out;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+    display: block;
+    .contentBox {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      .title {
+        color: #fff;
+        display: block;
+        line-height: 1.4;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      }
+      .date {
+        font-size: 10px;
+        color: var(--main-green-color);
+      }
+      .lang {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 10px;
+        color: var(--main-green-color);
+      }
+      .desc {
+        color: var(--main-white-color);
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+    .imageBox {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      &:hover .icon {
+        display: block;
+        transition: all 0.3s ease-in-out;
+      }
+      .icon {
+        display: none;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 40px;
+        color: var(--main-green-color);
+        transition: all 0.3s ease-in-out;
+      }
+      .image {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
