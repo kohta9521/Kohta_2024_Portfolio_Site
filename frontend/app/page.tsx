@@ -17,6 +17,7 @@ import Process from "@/components/organisms/Process";
 import News from "@/components/organisms/News";
 import ContactButton from "@/components/atoms/ContactButton";
 import SnsBox from "@/components/organisms/SnsBox";
+import Gallery from "@/components/organisms/Gallery";
 
 export default function Home() {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -42,6 +43,7 @@ export default function Home() {
         <SnsBox />
         <Top />
         <About />
+        <Gallery />
         <Work />
         <Profile />
         <News />
