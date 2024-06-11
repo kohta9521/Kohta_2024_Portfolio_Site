@@ -1,0 +1,65 @@
+.card {
+  border: 1px solid white;
+  .langName {
+  }
+  .iconBox {
+  }
+  .versionText {
+    font-size: 10px;
+  }
+  .year {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    .langName {
+    }
+    .iconBox {
+    }
+    .versionTtext {
+    }
+    .year {
+    }
+    .desc {
+    }
+  }
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--main-green-color);
+  }
+}
+
+.langName {
+  font-size: 1.5em;
+  margin-bottom: 14px;
+}
+
+.iconBox {
+  font-size: 4em;
+  margin-bottom: 8px;
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.versionText,
+.year,
+.desc {
+  margin: 4px 0;
+}
