@@ -30,7 +30,7 @@ const Gallery = () => {
             id={2}
             link="https://ufes-2024-official-site.vercel.app/"
             date="2024/5/10 ~ 2024/5/20"
-            lang="Next.js / React / TypeScript / Three.js"
+            lang="Next.js / React / TypeScript"
             title="UFES イベントLP"
             desc="私が代表を務めた大学生のための合同新歓イベントの紹介サイト兼、事前入場の登録サイトです。登録をしていただけると自動メールでQRコードが送信され当日の入場で使用可能です。"
             img="/images/gallery/ufes.png"
@@ -39,7 +39,7 @@ const Gallery = () => {
             id={3}
             link="https://www.kohta-tech-blog.com/"
             date="2024/5/10 ~ 2024/5/20"
-            lang="Next.js / React / TypeScript / Three.js"
+            lang="Next.js / React / TypeScript / MicroCMS / Nuwt"
             title="個人ブログサイト"
             desc="普段の勉強内容をアウトプットする場としてtechブログを運営しております。React Next.jsを使用して作成、CMS機能を付け記事の管理や編集を行えます。"
             img="/images/gallery/blog.png"
@@ -48,7 +48,7 @@ const Gallery = () => {
             id={4}
             link="https://kokogohan-kohta9521s-projects.vercel.app/"
             date="2024/5/10 ~ 2024/5/20"
-            lang="Next.js / React / TypeScript / Three.js"
+            lang="Next.js / React / TypeScript / TailwindCSS"
             title="ここごはんサービスサイト"
             desc="自作サービスのサービスサイトです。社内やコミュニティ内といったクローズドな環境での飲食店やカフェなどの共有サービスです。現在サービスを構築中です。"
             img="/images/gallery/kokogohan.png"
@@ -57,7 +57,7 @@ const Gallery = () => {
             id={4}
             link="https://www.freers.co.jp/"
             date="2024/5/10 ~ 2024/5/20"
-            lang="Next.js / React / TypeScript / Three.js"
+            lang="Next.js / React / TypeScript"
             title="株式会社Freers様コーポレートサイト"
             desc="株式会社Freers様よりご依頼を受け制作を致しました。シンプルでかつ必要な情報をみやすくするためデザインに重点を置いて制作いたしました。"
             img="/images/gallery/freers.png"

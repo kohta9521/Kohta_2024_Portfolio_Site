@@ -1,0 +1,244 @@
+{
+  "lang": {
+    "frontend": {
+      "html": {
+        "id": 1,
+        "name": "HTML",
+        "version": ["4.01", "5"],
+        "iconName": "FaHtml5",
+        "periodOfUse": "3 years",
+        "experience": "3 years",
+        "usage": "主にWeb制作全般で使用しています。また会社の業務やフリーランスでも日々使用しています。"
+      },
+      "css": {
+        "id": 1,
+        "name": "CSS",
+        "version": ["2", "3"],
+        "iconName": "FaCss3",
+        "periodOfUse": "3 years",
+        "usage": "主にWeb制作全般で使用しています。また会社の業務やフリーランスでも日々使用しています。"
+      },
+      "sass": {
+        "id": 1,
+        "name": "Sass",
+        "version": ["1.70.0"],
+        "iconName": "FaSass",
+        "periodOfUse": "3 years",
+        "usage": "主にWeb制作全般で使用しています。会社・フリーランス・サービスなどで日常的に使用しています。"
+      },
+      "tailwindcss": {
+        "id": 1,
+        "name": "Tailwind CSS",
+        "version": ["2.0.2"],
+        "iconName": "RiTailwindCssFill",
+        "periodOfUse": "1 years",
+        "usage": "最近のトレンド、そしてReactとの相性がいいということなどからキャッチアップをしている。個人サービスに導入をしています。"
+      },
+      "javascript": {
+        "id": 1,
+        "name": "JavaScript",
+        "version": ["ES5", "ES6"],
+        "iconName": "IoLogoJavascript",
+        "periodOfUse": "3 years",
+        "usage": "主にWeb制作全般で使用しています。Webだけではなくモバイル開発でも使用しています。"
+      },
+      "typescript": {
+        "id": 1,
+        "name": "TypeScript",
+        "version": ["4.0.3"],
+        "iconName": "SiTypescript",
+        "periodOfUse": "1 years",
+        "usage": "Reactの開発で使用しています。サーバーサイドなどで型が開発効率を上げるため使用しております。"
+      },
+      "react": {
+        "id": 1,
+        "name": "React",
+        "version": ["18"],
+        "iconName": "FaReact",
+        "periodOfUse": "2 years",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "nextjs": {
+        "id": 1,
+        "name": "Next.js",
+        "version": ["18"],
+        "iconName": "RiNextjsFill",
+        "periodOfUse": "1 years",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "storybook": {
+        "id": 1,
+        "name": "Storybook",
+        "version": ["18"],
+        "iconName": "SiStorybook",
+        "periodOfUse": "1 years",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "lint": {
+        "id": 1,
+        "name": "ESLint",
+        "version": ["18"],
+        "iconName": "SiEslint",
+        "periodOfUse": "1 years",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "prettier": {
+        "id": 1,
+        "name": "Prettier",
+        "version": ["18"],
+        "iconName": "SiPrettier",
+        "periodOfUse": "1 years",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "threejs": {
+        "id": 1,
+        "name": "Three.js",
+        "version": ["18"],
+        "iconName": "TbBrandThreejs",
+        "periodOfUse": "1 months",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "jest": {
+        "id": 1,
+        "name": "Jest",
+        "version": ["18"],
+        "iconName": "SiJest",
+        "periodOfUse": "6 months",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      },
+      "vercel": {
+        "id": 1,
+        "name": "Vercel",
+        "version": ["18"],
+        "iconName": "SiVercel",
+        "periodOfUse": "1 year",
+        "usage": "Web制作と自作のWebサービスでメインで使用しています。バージョンアップデートの確認も頻繁に行なっております"
+      }
+    },
+    "backend": {
+      "go": {
+        "id": 1,
+        "name": "Go",
+        "version": ["1.15.6"],
+        "iconName": "SiGo",
+        "periodOfUse": "1 years",
+        "usage": "APIサーバーの開発で使用しています。"
+      },
+      "node": {
+        "id": 2,
+        "name": "Node.js",
+        "version": ["10.7.0"],
+        "iconName": "FaNodeJs",
+        "periodOfUse": "1 years",
+        "usage": "APIサーバーの開発で使用しています。"
+      },
+      "rust": {
+        "id": 3,
+        "name": "Rust",
+        "version": ["1.78.0"],
+        "iconName": "FaRust",
+        "periodOfUse": "1 months",
+        "usage": "絶賛勉強中です。"
+      },
+      "cpp": {
+        "id": 3,
+        "name": "C++",
+        "version": ["1.78.0"],
+        "iconName": "TbBrandCpp",
+        "periodOfUse": "1 months",
+        "usage": "競技プログラミングで使用しています。"
+      },
+      "docker": {
+        "id": 3,
+        "name": "Docker",
+        "version": ["1.78.0"],
+        "iconName": "FaDocker",
+        "periodOfUse": "6 months",
+        "usage": "競技プログラミングで使用しています。"
+      },
+      "postman": {
+        "id": 3,
+        "name": "Postman",
+        "version": ["1.78.0"],
+        "iconName": "SiPostman",
+        "periodOfUse": "6 months",
+        "usage": "競技プログラミングで使用しています。"
+      }
+    },
+    "mobile": {
+      "reactnative": {
+        "id": 1,
+        "name": "React Native",
+        "version": ["0.74"],
+        "iconName": "FaReact",
+        "periodOfUse": "1 years",
+        "usage": "社内で新規のモバイルアプリを制作する際に使用していました。社内のメンバーがReactを使用しているため、React Nativeを使用しています。"
+      }
+    },
+    "tool": {
+      "figma": {
+        "id": 1,
+        "name": "Figma",
+        "iconName": "IoLogoFigma",
+        "periodOfUse": "2016 - present",
+        "usage": "普段のWeb制作・Webサービスのデザイン。ロゴ制作などのフリーランスの業務などで幅広く使用しています。Storybookなどと連携もしています。"
+      },
+      "premirepro": {
+        "id": 2,
+        "name": "Premire Pro",
+        "iconName": "SiAdobepremierepro",
+        "periodOfUse": "1 years",
+        "usage": "趣味の動画編集で使用しています。主にサークルや会社の忘年会・歓送迎会・合宿などでの動画編集をしています。"
+      },
+      "photoshop": {
+        "id": 3,
+        "name": "Photoshop",
+        "iconName": "SiAdobephotoshop",
+        "periodOfUse": "1 years",
+        "usage": "趣味の写真編集で使用しています。主にサークルや会社の忘年会・歓送迎会・合宿などでの写真編集をしています。"
+      },
+      "davinch": {
+        "id": 4,
+        "name": "DaVinci Resolve",
+        "iconName": "SiDavinciresolve",
+        "periodOfUse": "2 years",
+        "usage": "趣味の動画編集で使用しています。tiktok用の縦型動画・YouTube用の横型動画などを編集しています。"
+      },
+      "notion": {
+        "id": 4,
+        "name": "Notion",
+        "iconName": "SiNotion",
+        "periodOfUse": "3 years",
+        "usage": "趣味の動画編集で使用しています。tiktok用の縦型動画・YouTube用の横型動画などを編集しています。"
+      },
+      "miro": {
+        "id": 4,
+        "name": "Miro",
+        "iconName": "SiMiro",
+        "periodOfUse": "1 years",
+        "usage": "趣味の動画編集で使用しています。tiktok用の縦型動画・YouTube用の横型動画などを編集しています。"
+      },
+      "trello": {
+        "id": 4,
+        "name": "Trello",
+        "iconName": "FaTrello",
+        "periodOfUse": "1 years",
+        "usage": "趣味の動画編集で使用しています。tiktok用の縦型動画・YouTube用の横型動画などを編集しています。"
+      },
+      "slack": {
+        "id": 4,
+        "name": "Slack",
+        "iconName": "FaSlack",
+        "periodOfUse": "1 years",
+        "usage": "趣味の動画編集で使用しています。tiktok用の縦型動画・YouTube用の横型動画などを編集しています。"
+      },
+      "chatwork": {
+        "id": 4,
+        "name": "Chatwork",
+        "iconName": "AiFillWechatWork",
+        "periodOfUse": "1 years",
+        "usage": "趣味の動画編集で使用しています。tiktok用の縦型動画・YouTube用の横型動画などを編集しています。"
+      }
+    }
+  }
+}

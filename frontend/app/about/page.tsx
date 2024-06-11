@@ -3,12 +3,84 @@ import React from "react";
 // scss
 import styles from "./About.module.scss";
 
+// data
+import data from "@/data/skillData.json";
+
 // components
 import SubPageLayout from "@/components/templates/SubPageLayout";
 import SubSecTitle from "@/components/molecules/SubSecTitle";
 import BoxTitle from "@/components/molecules/BoxTitle";
 import SubMainText from "@/components/molecules/SubMainText";
 import SubContactBox from "@/components/organisms/SubContactBox";
+import SkillCard from "@/components/molecules/SkillCard";
+
+// アイコンのインポート
+import {
+  FaHtml5,
+  FaCss3,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaRust,
+  FaTrello,
+  FaSlack,
+  FaDocker,
+} from "react-icons/fa";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { IoLogoJavascript, IoLogoFigma } from "react-icons/io5";
+import { AiFillWechatWork } from "react-icons/ai";
+import {
+  SiTypescript,
+  SiGo,
+  SiAdobepremierepro,
+  SiAdobephotoshop,
+  SiDavinciresolve,
+  SiStorybook,
+  SiEslint,
+  SiPrettier,
+  SiNotion,
+  SiMiro,
+  SiVercel,
+  SiPostman,
+  SiJest,
+} from "react-icons/si";
+import { TbBrandCpp, TbBrandThreejs } from "react-icons/tb";
+
+// icon mapping
+const iconMapping: { [key: string]: JSX.Element } = {
+  // frontend
+  FaHtml5: <FaHtml5 />,
+  FaCss3: <FaCss3 />,
+  FaSass: <FaSass />,
+  RiTailwindCssFill: <RiTailwindCssFill />,
+  IoLogoJavascript: <IoLogoJavascript />,
+  SiTypescript: <SiTypescript />,
+  FaReact: <FaReact />,
+  RiNextjsFill: <RiNextjsFill />,
+  SiStorybook: <SiStorybook />,
+  SiEslint: <SiEslint />,
+  SiPrettier: <SiPrettier />,
+  TbBrandThreejs: <TbBrandThreejs />,
+  SiVercel: <SiVercel />,
+  SiJest: <SiJest />,
+  // backend
+  SiGo: <SiGo />,
+  FaNodeJs: <FaNodeJs />,
+  FaRust: <FaRust />,
+  TbBrandCpp: <TbBrandCpp />,
+  FaDocker: <FaDocker />,
+  SiPostman: <SiPostman />,
+  // tools
+  IoLogoFigma: <IoLogoFigma />,
+  SiAdobepremierepro: <SiAdobepremierepro />,
+  SiAdobephotoshop: <SiAdobephotoshop />,
+  SiDavinciresolve: <SiDavinciresolve />,
+  SiNotion: <SiNotion />,
+  SiMiro: <SiMiro />,
+  FaTrello: <FaTrello />,
+  FaSlack: <FaSlack />,
+  AiFillWechatWork: <AiFillWechatWork />,
+};
 
 const About = () => {
   return (
@@ -82,6 +154,73 @@ const About = () => {
           </li>
           <li>現在に至る</li>
         </ul>
+      </div>
+      <SubSecTitle
+        id={3}
+        stringid="summary"
+        text="My Skill & Tech Stack"
+        color="green"
+      />
+      <BoxTitle
+        id={3}
+        jaTitle="技術スタックとレベル感"
+        enTitle="About this website"
+      />
+      <SubMainText
+        id={4}
+        text="ここでは普段使用してるツール・言語・技術スタックをご確認していただけます。"
+      />
+      {/* 使用技術の一覧をジャンルごとにまとめて表示 */}
+      <h3 className={styles.genreTitle}>Frontend</h3>
+      <div className={styles.flexBox}>
+        {Object.values(data.lang.frontend).map((item) => (
+          <SkillCard
+            id={item.id}
+            name={item.name}
+            version={item.version}
+            iconName={iconMapping[item.iconName]}
+            periodOfUse={item.periodOfUse}
+            usage={item.usage}
+          />
+        ))}
+      </div>
+      <h3 className={styles.genreTitle}>Backend</h3>
+      <div className={styles.flexBox}>
+        {Object.values(data.lang.backend).map((item) => (
+          <SkillCard
+            id={item.id}
+            name={item.name}
+            version={item.version}
+            iconName={iconMapping[item.iconName]}
+            periodOfUse={item.periodOfUse}
+            usage={item.usage}
+          />
+        ))}
+      </div>
+      <h3 className={styles.genreTitle}>Mobile</h3>
+      <div className={styles.flexBox}>
+        {Object.values(data.lang.mobile).map((item) => (
+          <SkillCard
+            id={item.id}
+            name={item.name}
+            version={item.version}
+            iconName={iconMapping[item.iconName]}
+            periodOfUse={item.periodOfUse}
+            usage={item.usage}
+          />
+        ))}
+      </div>
+      <h3 className={styles.genreTitle}>Tools</h3>
+      <div className={styles.flexBox}>
+        {Object.values(data.lang.tool).map((item) => (
+          <SkillCard
+            id={item.id}
+            name={item.name}
+            iconName={iconMapping[item.iconName]}
+            periodOfUse={item.periodOfUse}
+            usage={item.usage}
+          />
+        ))}
       </div>
       <SubContactBox />
     </SubPageLayout>
